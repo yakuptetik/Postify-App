@@ -471,9 +471,11 @@ body:not(.menu-open) .respona-modal .modal-dialog {
 }
 .btn-link-highlight:hover,
 .btn-link-highlight:focus {
-  background-color: rgba(37, 31, 182, 0.09);
+  /* background-color: rgba(37, 31, 182, 0.09); */
   outline: 0;
   box-shadow: none;
+  
+  
 }
 .btn-link-highlight:hover:before,
 .btn-link-highlight:focus:before {
@@ -1735,7 +1737,7 @@ article.casehero .cover {
   position: relative;
   padding-top: 100%;
   overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+
   border-radius: 33px;
 }
 article.case .cover > .thumb-cover,
@@ -1858,7 +1860,7 @@ article.case .cover {
   position: relative;
   padding-top: 85%;
   overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+
   border-radius: 33px;
 }
 article.case .cover > .thumb {

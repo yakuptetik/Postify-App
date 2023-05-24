@@ -46,7 +46,7 @@
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
-    <title>Plans and Pricing - Postify</title>
+    <title>Postify - Plans and Pricing</title>
     <meta
       name="description"
       content="Respona offers affordable plans starting at $99/month. Save thousands of dollars each year and boost your outreach productivity."
@@ -68,7 +68,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Est. reading time" />
     <meta name="twitter:data1" content="1 minute" />
-  
 
     <link rel="stylesheet" id="fonts-css" href="/css/fonts.css" media="all" />
     <link
@@ -132,7 +131,7 @@
         transition-delay: 0ms;
       }
     </style>
-    <link rel="icon" href="images/cropped-favicon-1-32x32.png" sizes="32x32" />
+    <link rel="icon" href="images/amblem.svg" sizes="32x32" />
     <link
       rel="icon"
       href="images/cropped-favicon-1-192x192.png"
@@ -171,359 +170,418 @@
     ></noscript>
 
     <div id="view" class="flex-grow-1">
-          <!-- mobil navbar -->
-          <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-              <div class="modal-content d-flex">
-                <div
-                  class="container flex-grow-1 d-flex align-items-center justify-content-center"
-                >
-                  <ul id="menu-main-menu" class="menu">
-                    <li class="nav-item">
+      <!-- mobil navbar -->
+      <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content d-flex">
+            <div
+              class="container flex-grow-1 d-flex align-items-center justify-content-center"
+            >
+              <ul id="menu-main-menu" class="menu">
+                <li class="nav-item">
+                  <a
+                    href="/"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    target="_self"
+                    rel="follow"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Home</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="featuresDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-                    <li class="nav-item">
-                      <div class="dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="featuresDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <!-- dropdown-toggle -->
-                            Product
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="featuresDropdown"
-                        >
-                          <a class="dropdown-item" href="#">Publisher </a>
-    
-                          <a class="dropdown-item" href="#">Analytics</a>
-                          <a class="dropdown-item" href="#">Customer Engagement</a>
-                          <a class="dropdown-item" href="#"
-                            >AI Creativity Content</a
-                          >
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <div class="custom-dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="customFeaturesDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Channels
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="custom-dropdown-menu"
-                          aria-labelledby="customFeaturesDropdown"
-                        >
-                          <a class="custom-dropdown-item" href="#">Facebook</a>
-                          <a class="custom-dropdown-item" href="#">Instagram</a>
-                          <a class="custom-dropdown-item" href="#">Öğe 3</a>
-                          <a class="custom-dropdown-item" href="#">LinkedIn</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
+                        <!-- dropdown-toggle -->
+                        Product
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="featuresDropdown"
+                    >
+                      <a class="dropdown-item" href="#">Publisher </a>
+
+                      <a class="dropdown-item" href="#">Analytics</a>
+                      <a class="dropdown-item" href="#">Customer Engagement</a>
+                      <a class="dropdown-item" href="#"
+                        >AI Creativity Content</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="custom-dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/pricing/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Pricing</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="customFeaturesDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-    
-                    <li class="d-lg-none w-100 btn btn-primary nav-item">
-                      <a
-                        target="_blank"
-                        rel="noopener follow"
-                        href="https://social.postify.app/auth/register"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        >Login</a
+                        Channels
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="custom-dropdown-menu"
+                      aria-labelledby="customFeaturesDropdown"
+                    >
+                      <a class="custom-dropdown-item" href="#">Facebook</a>
+                      <a class="custom-dropdown-item" href="#">Instagram</a>
+                      <a class="custom-dropdown-item" href="#">Öğe 3</a>
+                      <a class="custom-dropdown-item" href="#">LinkedIn</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/pricing/"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    target="_self"
+                    rel="follow"
+                    >Pricing</a
+                  >
+                </li>
+
+                <li class="d-lg-none w-100 btn btn-primary nav-item">
+                  <a
+                    target="_blank"
+                    rel="noopener follow"
+                    href="https://social.postify.app/auth/register"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    >Login</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-          <header id="header" style="opacity: 0">
-            <div class="container-fluid">
-              <nav class="container p-0 navbar navbar-expand-lg align-items-center">
-                <div
-                  class="d-flex align-items-center justify-content-between w-100"
+        </div>
+      </div>
+      <header id="header" style="opacity: 0">
+        <div class="container-fluid">
+          <nav class="container p-0 navbar navbar-expand-lg align-items-center">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div class="">
+                <a
+                  href="/"
+                  title="Postify"
+                  data-wpel-link="internal"
+                  target="_self"
+                  rel="follow"
                 >
-                  <div class="">
+                  <img src="/fonts/Logo.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse justify-content-center">
+                <ul id="topmenu" class="navbar-nav align-items-center">
+                  <li class="nav-item">
                     <a
                       href="/"
-                      title="Postify"
+                      class="nav-link"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
+                      >Home</a
                     >
-                      <img src="/fonts/PostifyLogo.svg" alt="" />
-                    </a>
-                  </div>
-    
-                  <div class="collapse navbar-collapse justify-content-center">
-                    <ul id="topmenu" class="navbar-nav align-items-center">
-                      <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                    <div class="custom-dropdown">
+                      <div class="d-flex align-items-center">
                         <a
-                          href="/"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
-                          >Home</a
+                          class="custom-dropdown-toggle nav-link"
+                          id="featuresDropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
                         >
-                      </li>
-                      <li class="nav-item">
-                        <div class="custom-dropdown">
-                          <div class="d-flex align-items-center">
+                          <!-- dropdown-toggle -->
+                          Product
+                        </a>
+                        <svg
+                          fill="#525979"
+                          height="6"
+                          viewBox="0 0 11 7"
+                          width="11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                            fill="#525979"
+                          />
+                        </svg>
+                      </div>
+
+                      <div
+                        class="custom-dropdown-menu"
+                        aria-labelledby="featuresDropdown"
+                      >
+                        <div class="drop-menu">
+                          <div>
                             <a
-                              class="custom-dropdown-toggle nav-link"
-                              id="featuresDropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
+                              href="publish"
+                              class="navbar_child d-flex align-items-center"
                             >
-                              <!-- dropdown-toggle -->
-                              Product
-                            </a>
-                            <svg
-                              fill="#525979"
-                              height="6"
-                              viewBox="0 0 11 7"
-                              width="11"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                                fill="#525979"
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/publish.png"
+                                alt=""
                               />
-                            </svg>
+
+                              <div class="custom-dropdown-item">
+                                <strong>Publisher</strong>
+                                <div>dfghfdsefrghfdef</div>
+                              </div>
+                            </a>
+
+                            <a
+                              href="#"
+                              class="d-flex navbar_child align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/analiz.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Analytics</strong>
+                                <div>dfghfdsefrghfdef</div>
+                              </div>
+                            </a>
                           </div>
-    
-                          <div
-                            class="custom-dropdown-menu"
-                            aria-labelledby="featuresDropdown"
-                          >
-                            <div class="drop-menu">
-                              <div>
-                                <a  href="publish" class="navbar_child d-flex align-items-center">
-                                  <img  height="30px" width="30px" src="images/publish.png" alt="">
-    
-                                  <div class="custom-dropdown-item">
-                                  <strong>Publisher</strong>
-                                  <div>dfghfdsefrghfdef</div>
-                                  </div>
-                                </a>
-                                
-                                <a   href="#" class="d-flex navbar_child align-items-center">
-                                  <img height="30px" width="30px" src="images/analiz.png" alt="">
-    
-                                  <div class="custom-dropdown-item">
-                                  <strong>Analytics</strong>
-                                  <div>dfghfdsefrghfdef</div>
-                                  </div>
-                                </a>
+
+                          <div>
+                            <a
+                              href="#"
+                              class="navbar_child d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/Plan.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Customer Engagement</strong>
+                                <div>dfghfdsefrghfdef</div>
                               </div>
-    
-                              <div>
-                                <a  href="#" class="navbar_child d-flex align-items-center">
-                                  <img  height="30px" width="30px" src="images/Plan.png" alt="">
-    
-                                  <div class="custom-dropdown-item">
-                                  <strong>Customer Engagement</strong>
-                                  <div>dfghfdsefrghfdef</div>
-                                  </div>
-                                </a>
-                                
-                                <a   href="#" class=" navbar_child d-flex align-items-center">
-                                  <img height="30px" width="30px" src="images/ai.png" alt="">
-    
-                                  <div class="custom-dropdown-item">
-                                  <strong>AI Creativity Content</strong>
-                                  <div>dfghfdsefrghfdef</div>
-                                  </div>
-                                </a>
+                            </a>
+
+                            <a
+                              href="#"
+                              class="navbar_child d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/ai.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>AI Creativity Content</strong>
+                                <div>dfghfdsefrghfdef</div>
                               </div>
-    
-                            </div>
+                            </a>
                           </div>
                         </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="custom-dropdown">
-                          <div class="d-flex align-items-center">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="custom-dropdown">
+                      <div class="d-flex align-items-center">
+                        <a
+                          class="custom-dropdown-toggle nav-link"
+                          id="customFeaturesDropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Channels
+                        </a>
+                        <svg
+                          fill="#525979"
+                          height="6"
+                          viewBox="0 0 11 7"
+                          width="11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                            fill="#525979"
+                          />
+                        </svg>
+                      </div>
+
+                      <div
+                        class="custom-dropdown-menu"
+                        aria-labelledby="customFeaturesDropdown"
+                      >
+                        <div class="drop-menu">
+                          <div>
                             <a
-                              class="custom-dropdown-toggle nav-link"
-                              id="customFeaturesDropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
+                              href="#"
+                              class="navbar_child d-flex align-items-center"
                             >
-                              Channels
-                            </a>
-                            <svg
-                              fill="#525979"
-                              height="6"
-                              viewBox="0 0 11 7"
-                              width="11"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                                fill="#525979"
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/instagramm.png"
+                                alt=""
                               />
-                            </svg>
-                          </div>
-    
-                          <div
-                            class="custom-dropdown-menu"
-                            aria-labelledby="customFeaturesDropdown"
-                          > <div class="drop-menu">
-                            <div>
-                              <a  href="#" class="navbar_child d-flex align-items-center">
-                                <img  height="30px" width="30px" src="images/instagramm.png" alt="">
-    
-                                <div class="custom-dropdown-item">
-                                <strong>İnstagram</strong>
-                                <div>dfghfdsefrghfdef</div>
-                                </div>
-                              </a>
-                              
-                              <a   href="#" class="d-flex navbar_child align-items-center">
-                                <img height="30px" width="30px" src="images/facebook.png" alt="">
-    
-                                <div class="custom-dropdown-item">
+
+                              <div class="custom-dropdown-item">
+                                <strong>Instagram</strong>
+                              </div>
+                            </a>
+
+                            <a
+                              href="#"
+                              class="d-flex navbar_child align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/facebook.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
                                 <strong>Facebook</strong>
-                                <div>dfghfdsefrghfdef</div>
-                                </div>
-                              </a>
-                            </div>
-    
-                            <div>
-                              <a  href="#" class="navbar_child d-flex align-items-center">
-                                <img  height="30px" width="30px" src="images/twitterr.png" alt="">
-    
-                                <div class="custom-dropdown-item">
-                                <strong> Twitter</strong>
-                                <div>dfghfdsefrghfdef</div>
-                                </div>
-                              </a>
-                              
-                              <a   href="#" class=" navbar_child d-flex align-items-center">
-                                <img height="30px" width="30px" src="images/linkedin.png" alt="">
-    
-                                <div class="custom-dropdown-item">
-                                <strong>Linkedln </strong>
-                                <div>dfghfdsefrghfdef</div>
-                                </div>
-                              </a>
-                            </div>
-    
+                              </div>
+                            </a>
                           </div>
+
+                          <div>
+                            <a
+                              href="#"
+                              class="navbar_child d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/twitterr.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong> Twitter</strong>
+                              </div>
+                            </a>
+
+                            <a
+                              href="#"
+                              class="navbar_child d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="images/linkedin.png"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Linkedln </strong>
+                              </div>
+                            </a>
                           </div>
                         </div>
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          href="/pricing/"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
-                          >Pricing</a
-                        >
-                      </li>
-                      <li class="d-lg-none w-100 btn btn-primary nav-item">
-                        <a
-                          target="_blank"
-                          rel="noopener follow"
-                          href="https://app.respona.com/login"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          >Login</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="d-flex align-items-center">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
                     <a
-                      href="https://social.postify.app/auth/login"
-                      class="d-none d-lg-inline-block btn btn-outline-primary me-10"
-                      title="Login"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
+                      href="/pricing/"
+                      class="nav-link"
                       data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Pricing</a
                     >
-                      Login
-                    </a>
+                  </li>
+                  <li class="d-lg-none w-100 btn btn-primary nav-item">
                     <a
-                      href="https://social.postify.app/auth/register"
-                      class="btn btn-primary"
-                      title="Start for free"
                       target="_blank"
-                      rel="nofollow noopener noreferrer"
+                      rel="noopener follow"
+                      href="https://app.respona.com/login"
+                      class="nav-link"
                       data-wpel-link="internal"
+                      >Login</a
                     >
-                      Start for free
-                    </a>
-                    <button
-                      type="button"
-                      class="hamburger d-lg-none"
-                      data-bs-toggle="modal"
-                      data-bs-target="#mobileMenu"
-                    >
-                      <span class="hamburger-inner"></span>
-                      <span class="visually-hidden">Toggle menu</span>
-                    </button>
-                  </div>
-                </div>
-              </nav>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center">
+                <a
+                  href="https://social.postify.app/auth/login"
+                  class="d-none d-lg-inline-block btn btn-outline-primary me-10"
+                  title="Login"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-wpel-link="internal"
+                >
+                  Login
+                </a>
+                <a
+                  href="https://social.postify.app/auth/register"
+                  class="btn btn-primary"
+                  title="Start for free"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-wpel-link="internal"
+                >
+                  Start for free
+                </a>
+                <button
+                  type="button"
+                  class="hamburger d-lg-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mobileMenu"
+                >
+                  <span class="hamburger-inner"></span>
+                  <span class="visually-hidden">Toggle menu</span>
+                </button>
+              </div>
             </div>
-          </header>
+          </nav>
+        </div>
+      </header>
       <main class="content">
         <div class="container-fluid">
           <h1
@@ -1951,7 +2009,6 @@
       id="respona-pricing-short-js"
       type="7be7f94275457598834fab0e-text/javascript"
     ></script>
-
 
     <script
       src="/js/rocket-loader.min.js"
