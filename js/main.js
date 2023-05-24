@@ -195,3 +195,20 @@ customDropdown.forEach((a) => a.addEventListener('mouseenter', (e) => {
 customDropdown.forEach((a) => a.addEventListener('mouseleave', (e) => {
   e.target.querySelector('.custom-dropdown-menu').classList.remove('show');
 }));
+const videoContainers =
+document.getElementsByClassName("video-container");
+
+for (let i = 0; i < videoContainers.length; i++) {
+const container = videoContainers[i];
+const video = container.querySelector("video"); // Video elemanını bul
+
+container.addEventListener("mouseover", () => {
+  video.currentTime = 0;
+  video.play();
+  video.loop = true;
+});
+
+container.addEventListener("mouseleave", () => {
+  video.pause();
+});
+}
