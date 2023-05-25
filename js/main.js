@@ -2,11 +2,13 @@
   "use strict";
   firstInteraction();
 
-  $("header").css('opacity', 0);
+  if(window.location.pathname === "/")  {
+    $("header").css('opacity', 0);
 
-  setTimeout(() => {
-    $("header").css('opacity', 1);
-  }, 4000);
+    setTimeout(() => {
+      $("header").css('opacity', 1);
+    }, 4000);
+  }
 
   var userInteracted = false;
   function firstInteraction() {
