@@ -482,7 +482,7 @@
 }
 .respona-feature {
   border-radius: 10px;
-  padding: 70px 35px 0;
+  padding:  35px  30px;
   background: #eaedf1;
   width: 100%;
 }
@@ -500,6 +500,12 @@
   line-height: 1.5;
   max-width: 450px;
   margin: 0 auto 30px;
+  opacity: 80%;
+}
+.respona-feature p strong {
+  font-size: 1.125rem;
+ opacity: 100%!important;
+ color: #424f65;
 }
 .respona-cta-wrapper {
   position: relative;
