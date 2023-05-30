@@ -805,6 +805,9 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
+  .video-media{
+    display: block;
+  }
   .col-lg-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
@@ -6794,7 +6797,7 @@ h2.tiny {
 h1,
 h2 {
   color: #111a45;
-  letter-spacing: -3.5px;
+  letter-spacing: -1.5px;
 }
 .h3,
 .h4,
