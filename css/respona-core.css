@@ -590,6 +590,7 @@
 }
 .respona-video-story {
   position: relative;
+  overflow: hidden;
   margin: 100px -15px;
 }
 @media (min-width: 576px) {
@@ -604,12 +605,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../images/section-right-2.webp);
     z-index: -1;
     transform: translateY(-50%);
-  }
-  .no-webp .respona-video-story:after {
-    background-image: url(../images/section-right-2.png);
   }
 }
 .respona-video-story *,

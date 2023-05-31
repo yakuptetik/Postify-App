@@ -565,22 +565,15 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 30px;
-  --bs-gutter-y: 0;
+ 
+  --bs-gutter-y: 10px;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -0.5);
-  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  padding-right: calc(var(--bs-gutter-x) * -0.5);
+  padding-left: calc(var(--bs-gutter-x) * -0.5);
 }
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
-}
+
 .col {
   flex: 1 0 0%;
 }

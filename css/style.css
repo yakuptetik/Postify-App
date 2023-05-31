@@ -2564,7 +2564,21 @@ article.term > ol > li h4 {
   padding-top: 20px;
    
   }
-
+  
+  @media (max-width: 1024px) {
+    .custom-dropdown-menu {
+      display: none;
+      position: absolute;
+     padding: 15px!important;
+      background-color: #f8f9fa;
+      max-width: auto!important;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 15px;
+       
+     
+    }
+  }
   
 
   .card {
@@ -2628,9 +2642,11 @@ video {
 
 .features-flex{
   display: flex;
+  margin-bottom: 100px
 }
-@media (min-width: 1000px) {
+@media (max-width: 1024px) {
   .features-flex{
+    display: flex;
     flex-direction: column;
   }
 }
