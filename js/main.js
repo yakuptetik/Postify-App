@@ -1,15 +1,16 @@
 (function ($) {
   "use strict";
-  firstInteraction();
-
-  if(window.location.pathname === "/")  {
-    $("header").css('opacity', 0);
-
-    setTimeout(() => {
-      $("header").css('opacity', 1);
-    }, 4000);
-  }
-
+  [
+    "keydown",
+    "mousedown",
+    "mousemove",
+    "touchmove",
+    "touchstart",
+    "touchend",
+    "wheel",
+  ].forEach(function (e) {
+    window.addEventListener(e, firstInteraction, { once: true });
+  });
   var userInteracted = false;
   function firstInteraction() {
     if (!userInteracted) {
@@ -168,49 +169,9 @@
       var params = "ref=" + ref;
       if (utm_source) params += "&utm_source=" + utm_source;
       if (utm_source_id) params += "&utm_source_id=" + utm_source_id;
-      $('a[href="https://social.postify.app/auth/register"').each(function () {
+      $('a[href="https://app.respona.com/welcome"').each(function () {
         $(this).attr("href", $(this).attr("href") + "?" + params);
       });
     }
   });
 })(jQuery);
-
-var dropdown = document.querySelectorAll('.dropdown');
-
-dropdown.forEach((a) => a.addEventListener('mouseenter', (e) => {
-  e.target.querySelector('.dropdown-menu').classList.add('show');
-}))
-
-
-dropdown.forEach((a) => a.addEventListener('mouseleave', (e) => {
-  e.target.querySelector('.dropdown-menu').classList.remove('show');
-}))
-
-
-var customDropdown = document.querySelectorAll('.custom-dropdown');
-
-customDropdown.forEach((a) => a.addEventListener('mouseenter', (e) => {
-  e.target.querySelector('.custom-dropdown-menu').classList.add('show');
-}));
-
-
-customDropdown.forEach((a) => a.addEventListener('mouseleave', (e) => {
-  e.target.querySelector('.custom-dropdown-menu').classList.remove('show');
-}));
-const videoContainers =
-document.getElementsByClassName("video-container");
-
-for (let i = 0; i < videoContainers.length; i++) {
-const container = videoContainers[i];
-const video = container.querySelector("video"); // Video elemanını bul
-
-container.addEventListener("mouseover", () => {
-  video.currentTime = 0;
-  video.play();
-  video.loop = true;
-});
-
-container.addEventListener("mouseleave", () => {
-  video.pause();
-});
-}

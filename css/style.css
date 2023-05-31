@@ -2622,6 +2622,15 @@ video {
   cursor: pointer;
 }
 
-.shadow{
+/* .shadow{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} */
+
+.features-flex{
+  display: flex;
+}
+@media (min-width: 1000px) {
+  .features-flex{
+    flex-direction: column;
+  }
 }
