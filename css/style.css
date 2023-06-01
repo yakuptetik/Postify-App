@@ -2621,6 +2621,7 @@ video {
   display: flex;
   margin-bottom: 100px;
 }
+
 .video-mobil {
   display: flex;
   flex-wrap: wrap;
@@ -2639,6 +2640,9 @@ video {
   .features-flex {
     display: flex;
     flex-direction: column;
+  }
+  .features-reverse{
+    flex-direction: column-reverse
   }
 }
 @media (max-width: 1189px) {
