@@ -2533,11 +2533,19 @@ article.term > ol > li h4 {
 
 .navbar_child {
   padding:10px 30px ;
-  
-  
+  display: flex;
+  justify-content: center;
+
+}
+.navbar_child a{
+  padding:10px 30px ;
+
+  display: flex;
+  justify-content: center!important;
+ 
 }
 
-.navbar_child:hover {
+.navbar_child a:hover {
   cursor: pointer;
   background-color: #2b32f026;
   color: #212529;
