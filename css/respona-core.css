@@ -1827,7 +1827,7 @@ img.respona-video-story__media[data-active="true"],
 }
 @media (min-width: 1024px) {
   .respona-pricing-plan {
-    padding: 72px 62px 30px;
+    padding: 72px 62px ;
   }
   .respona-pricing-plan-price {
     font-size: 4.375rem;

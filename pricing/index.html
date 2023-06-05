@@ -658,25 +658,25 @@
             <div class="container p-0">
               <div class="respona-pricing-plans">
                 <div class="row">
-                  <div class="col-lg-6 pe-lg-4 d-flex mb-4">
+                  <div class="col-lg-6 pe-lg-4  mb-4">
                     <div class="respona-pricing-plan bg-primary flex-grow-1">
                       <h2
                         class="respona-pricing-plan-title text-center font-medium text-white"
                         v-html="strings.starter"
                       >
-                        Starter
+                      Standard
                       </h2>
                       <p
                         class="respona-pricing-plan-description text-center font-medium text-white mb-5"
                         v-html="strings.starterDescription"
                       >
-                        Ideal for in-house teams and SMBs
+                      Basic features for teams who want to organize their social media management.
                       </p>
                       <p class="mb-0 text-center text-white">
                         <strong
                           class="respona-pricing-plan-price font-medium"
                           v-html="currentPlan == 'monthly' ? settings.monthly.starterTotal : settings.yearly.starterTotal"
-                          >$99/mo</strong
+                          >$39/mo</strong
                         >
                       </p>
                       <p
@@ -685,7 +685,7 @@
                       >
                         BILLED MONTHLY
                       </p>
-                      <ul class="mx-auto my-5 p-0">
+                      <!-- <ul class="mx-auto my-5 p-0">
                         <li
                           class="d-flex align-items-start text-white mb-4"
                           v-if="!planFeatures"
@@ -747,7 +747,7 @@
                             ></span>
                           </p>
                         </li>
-                      </ul>
+                      </ul> -->
                       <p class="mb-4">
                         <a
                           class="d-block btn btn-outline-primary w-100 mb-2 mx-auto"
@@ -769,32 +769,33 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-lg-6 ps-lg-4 d-flex mb-4">
+                  <div class="col-lg-6 ps-lg-4  mb-4">
                     <div class="respona-pricing-plan flex-grow-1">
                       <h3
                         class="respona-pricing-plan-title text-center font-medium"
                         v-html="strings.unlimited"
                       >
-                        Unlimited
+                      Professional
                       </h3>
                       <p
                         class="respona-pricing-plan-description text-center font-medium text-dark-2 mb-5"
                         v-html="strings.unlimitedDescription"
                       >
-                        Ideal for agencies and large teams
+                       
+                      Extensive features for teams who need strong processes and want to save a lot of time.
                       </p>
                       <strong
                         class="respona-pricing-plan-price d-block text-center text-primary font-medium mb-0"
                         v-html="currentPlan == 'monthly' ? settings.monthly.unlimitedTotal : settings.yearly.unlimitedTotal"
-                        >$399/mo</strong
+                        >$79/mo</strong
                       >
                       <p
                         class="respona-pricing-plan-notice text-center text-dark-3 text-uppercase font-bold"
                         v-html="currentPlan == 'monthly' ? settings.monthly.unlimitedBilled : settings.yearly.unlimitedBilled"
                       >
-                        BILLED ANNUALLY
+                        BILLED MONTHLY
                       </p>
-                      <ul class="mx-auto my-5 p-0">
+                      <!-- <ul class="mx-auto my-5 p-0">
                         <li
                           class="d-flex align-items-start mb-4"
                           v-if="!planFeatures"
@@ -856,7 +857,7 @@
                             ></span>
                           </p>
                         </li>
-                      </ul>
+                      </ul> -->
                       <p class="mb-4">
                         <a
                           class="d-block btn btn-primary w-100 mb-2 mx-auto"
