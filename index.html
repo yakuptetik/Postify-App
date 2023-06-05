@@ -320,7 +320,7 @@
                         aria-labelledby="featuresDropdown"
                       >
                         <div class="drop-menu">
-                          <div>
+                          <div class="drop-menu-item">
                             <a
                               href="/publish"
                               class="navbar_child d-flex align-items-center"
@@ -334,7 +334,7 @@
 
                               <div class="custom-dropdown-item">
                                 <strong>Publisher</strong>
-                                <!-- <div>dfghfdsefrghfdef</div> -->
+                                
                               </div>
                             </a>
 
@@ -351,12 +351,12 @@
 
                               <div class="custom-dropdown-item">
                                 <strong>Analytics</strong>
-                                <!-- <div>dfghfdsefrghfdef</div> -->
+                                
                               </div>
                             </a>
                           </div>
 
-                          <div>
+                          <div class="drop-menu-item">
                             <a
                               href="/customer-engagement/"
                               class="navbar_child d-flex align-items-center"
@@ -370,7 +370,7 @@
 
                               <div class="custom-dropdown-item">
                                 <strong>Customer Engagement</strong>
-                                <!-- <div>dfghfdsefrghfdef</div> -->
+                                
                               </div>
                             </a>
 
@@ -387,7 +387,7 @@
 
                               <div class="custom-dropdown-item">
                                 <strong>AI Creativity Content</strong>
-                                <!-- <div>dfghfdsefrghfdef</div> -->
+                                
                               </div>
                             </a>
                           </div>
@@ -555,7 +555,11 @@
       </header>
 
       <!-- video -->
-      <div style="position: relative; margin-top: -20px" id="home">
+      <div
+        class="home-desktop"
+        style="position: relative; margin-top: -100px"
+        id="home"
+      >
         <video
           style="
             width: 100%;
@@ -570,6 +574,10 @@
         >
           Tarayıcınız video etiketini desteklemiyor.
         </video>
+      </div>
+      <!-- mobil video -->
+      <div class="home-mobil">
+        <img class="mobil-img" src="/images/Dashboard.svg" alt="" />
       </div>
 
       <!-- brands -->
@@ -666,7 +674,7 @@
       <main class="content">
         <div class="container-fluid">
           <!-- map section  -->
-          <div style="margin-top: 100px">
+          <div style="padding-top: 100px">
             <h2 class="has-gradient text-center">
               <strong>Save Time</strong> and Boost Efficiency
             </h2>
@@ -889,7 +897,7 @@
                 rgba(255, 255, 255, 1) 100%
               );
             "
-            class="respona-features mt-100 mb-100"
+            class="postify-features mt-100 mb-100"
           >
             <div class="container p-0">
               <div class="">
@@ -900,12 +908,10 @@
                   <!-- features 1 text  -->
                   <div class="col-lg-6">
                     <div
-                      class="respona-feature flex-grow-1 text-left"
+                      class="postify-feature flex-grow-1 text-left"
                       style="background: transparent"
                     >
-                      <h3  class="mb-3">
-                        Instant Sharing
-                      </h3>
+                      <h3 class="mb-3">Instant Sharing</h3>
                       <div class="font-medium">
                         <p>
                           Instantly boost social media engagement with Postify's
@@ -913,35 +919,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Customizable Posts:</strong>
                           Customize your content with Postify. Edit posts, add
@@ -950,35 +927,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Instant Sharing:</strong>
 
@@ -992,13 +940,13 @@
                   <!-- features 1 image  -->
                   <div class="col-lg-6 d-flex">
                     <div
-                      class="respona-feature flex-grow-1 text-center"
+                      class="postify-feature flex-grow-1 text-center"
                       style="background: transparent"
                     >
                       <img
                         alt="Sharing"
                         class="lazyload"
-                        src="images/Instant-Sharing.svg"
+                        src="/images/Instant-Sharing.svg"
                       />
                     </div>
                   </div>
@@ -1009,24 +957,23 @@
                 >
                   <div class="col-lg-6 d-flex">
                     <div
-                      class="respona-feature flex-grow-1 text-center"
+                      class="postify-feature flex-grow-1 text-center"
                       style="background: transparent"
                     >
                       <img
+                        style="width: 80%"
                         alt="Sharing"
                         class="lazyload"
-                        src="images/ContentCreation.png"
+                        src="/images/ContentCreation.png"
                       />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-5">
                     <div
-                      class="respona-feature flex-grow-1 text-left"
-                      style="background: transparent"
+                      class="postify-feature flex-grow-1 text-left"
+                      style="background: transparent; padding-left: 20px"
                     >
-                      <h3  class="mb-3">
-                        Content Creation
-                      </h3>
+                      <h3 class="mb-3">Content Creation</h3>
                       <div class="font-medium">
                         <p>
                           Create high-quality, original content effortlessly
@@ -1034,35 +981,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Time Saving:</strong>
                           Save time with Content AI's automatic content
@@ -1070,35 +988,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Creativity:</strong>
 
@@ -1116,12 +1005,10 @@
                 >
                   <div class="col-lg-6">
                     <div
-                      class="respona-feature flex-grow-1 text-left"
+                      class="postify-feature flex-grow-1 text-left"
                       style="background: transparent"
                     >
-                      <h3  class="mb-3">
-                        Post Scheduling
-                      </h3>
+                      <h3 class="mb-3">Post Scheduling</h3>
                       <div class="font-medium">
                         <p>
                           Boost your social media performance with Postify. Plan
@@ -1129,35 +1016,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Planning :</strong>
                           Create a better social media strategy by planning your
@@ -1165,35 +1023,6 @@
                         </p>
                       </div>
                       <div class="d-flex align-items-start">
-                        <div style="padding-right: 10px">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                          >
-                            <path
-                              opacity="0.2"
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              fill="#1EBD53"
-                            />
-                            <path
-                              d="M14.125 7.75L8.62497 13L5.875 10.375"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                            <path
-                              d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z"
-                              stroke="#1EBD53"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </div>
                         <p style="margin-left: none">
                           <strong>Better Performance:</strong>
                           Schedule your content to be automatically posted on a
@@ -1205,7 +1034,7 @@
 
                   <div class="col-lg-6 d-flex">
                     <div
-                      class="respona-feature flex-grow-1 text-center"
+                      class="postify-feature flex-grow-1 text-center"
                       style="background: transparent"
                     >
                       <img
@@ -1230,13 +1059,13 @@
               your next campaign in no time.
             </p>
 
-            <div class="respona-features mt-100 mb-100">
+            <div class="postify-features mt-100 mb-100">
               <div class="container p-0">
                 <!-- mobil  -->
                 <div class="video-mobil">
                   <div style="padding: 10px" class="col-lg-6 d-flex mb-4">
                     <img
-                    style="height: 100%; width: 100%;"
+                      style="height: 100%; width: 100%"
                       alt="calendar"
                       class="lazyloaded card mobile-card"
                       src="/media/calendar_image.jpg"
@@ -1245,34 +1074,27 @@
                   </div>
                   <div style="padding: 10px" class="col-lg-6 d-flex mb-4">
                     <img
-                    
                       alt="analytics_image"
-                      class="lazyloaded  card mobile-card"
+                      class="lazyloaded card mobile-card"
                       src="/media/analytics_image.jpg"
                       loading="lazy"
                     />
                   </div>
                   <div class="col-lg-6 d-flex mb-4">
-                    
-                     
-                      <img
+                    <img
                       alt="calendar"
                       class="lazyloaded card mobile-card"
                       src="/media/postify_ai_image.jpg"
                       loading="lazy"
                     />
-                   
                   </div>
                   <div class="col-lg-6 d-flex mb-4">
-                   
-                   
                     <img
-                    alt="calendar"
-                    class="lazyloaded card mobile-card"
-                    src="/media/postify_card_image.jpg"
-                    loading="lazy"
-                  />
-                   
+                      alt="calendar"
+                      class="lazyloaded card mobile-card"
+                      src="/media/postify_card_image.jpg"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
 
@@ -1351,13 +1173,13 @@
           </div>
 
           <!-- reviews -->
-          <div class="respona-features mt-100 mb-100">
+          <div class="postify-features mt-100 mb-100">
             <div class="container p-0">
               <div class="row">
                 <!-- review 1 -->
                 <div class="col-lg-4 d-flex mb-4">
                   <div
-                    class="respona-feature flex-grow-1 text-center"
+                    class="postify-feature flex-grow-1 text-center"
                     style="background-color: transparent"
                   >
                     <div
@@ -1414,7 +1236,7 @@
                 <!-- review 2-->
                 <div class="col-lg-4 d-flex mb-4">
                   <div
-                    class="respona-feature flex-grow-1 text-center"
+                    class="postify-feature flex-grow-1 text-center"
                     style="background-color: transparent"
                   >
                     <div
@@ -1472,7 +1294,7 @@
                 <!-- review 3 -->
                 <div class="col-lg-4 d-flex mb-4">
                   <div
-                    class="respona-feature flex-grow-1 text-center"
+                    class="postify-feature flex-grow-1 text-center"
                     style="background-color: transparent"
                   >
                     <div
@@ -1587,11 +1409,11 @@
       </main>
     </div>
     <footer id="footer">
-      <div class="container-fluid">
+      <div style="padding: 50px 0px" class="container-fluid">
         <div class="container p-0">
-          <div class="row">
-            <div class="col-lg-3 text-center text-lg-start mb-lg-0 mb-100">
-              <p class="mb-30">
+          <div class="rowi">
+            <div class="text-center text-lg-start mb-lg-0 mb-100">
+              <p style="margin-bottom: 20px;">
                 <a
                   href="/"
                   title="Postify"
@@ -1599,27 +1421,43 @@
                   target="_self"
                   rel="follow"
                 >
-                  <img height="60" width="180" src="/images/postify_white.png" alt="" />
+                  <img
+                    height="60"
+                    width="200"
+                    src="/images/postify_white.png"
+                    alt=""
+                  />
                 </a>
               </p>
-              <p class="copyright font-medium text-light mb-30">
-                Save Time and Boost Efficiency
-              </p>
-              <ul
+              <div style="margin-bottom:15px;" class="d-flex"  >
+                <a
+                  class="footer-link"
+                 
+                  href="https://ron.digital/"
+                  >Ron Digital</a
+                >
+                <strong style="padding: 0px 5px 0px 5px">|</strong>
+
+        
+                <a class="footer-link" href="/privacy-policy/">Privacy & Policy</a>
+              </div>
+             
+              <ul 
                 class="social d-flex justify-content-center justify-content-lg-start list-unstyled p-0 m-0"
               >
                 <li>
                   <a
-                    href="https://www.facebook.com/ResponaApp"
+                    href="https://www.instagram.com/plandy_co/?igshid=MzRlODBiNWFlZA%3D%3D"
                     title="Facebook"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
                     data-wpel-link="external"
                   >
                     <img
+                    
                       class="skip-lazy"
-                      src="fonts/facebook.svg"
-                      alt="Facebook"
+                      src="/fonts/instagram.svg"
+                      alt="Instagram"
                       width="24"
                       height="24"
                     />
@@ -1627,7 +1465,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/company/respona"
+                    href="https://www.linkedin.com/showcase/plandy-app/about/"
                     title="LinkedIn"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
@@ -1635,7 +1473,7 @@
                   >
                     <img
                       class="skip-lazy"
-                      src="fonts/linkedin.svg"
+                      src="/fonts/linkedin.svg"
                       alt="LinkedIn"
                       width="24"
                       height="24"
@@ -1644,7 +1482,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/ResponaApp"
+                    href="https://twitter.com/plandy_co"
                     title="Twitter"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
@@ -1652,39 +1490,26 @@
                   >
                     <img
                       class="skip-lazy"
-                      src="fonts/twitter.svg"
+                      src="/fonts/twitter.svg"
                       alt="Twitter"
                       width="24"
                       height="24"
                     />
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UCCBCMZbf25xR3V0XZnBzInQ"
-                    title="YouTube"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer external"
-                    data-wpel-link="external"
-                  >
-                    <img
-                      class="skip-lazy"
-                      src="fonts/youtube.svg"
-                      alt="YouTube"
-                      width="29"
-                      height="20"
-                    />
-                  </a>
-                </li>
+             
               </ul>
+              <p style="margin-top:15px;" >© All rights reserved.</p>
+              
+              
+           
             </div>
-            <div
-              id="nav_menu-2"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
-            >
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
               <h4 class="widget-title text-uppercase font-bold mb-20">
                 Use cases
               </h4>
+
               <div class="menu-use-cases-container">
                 <ul id="menu-use-cases" class="menu">
                   <li>
@@ -1707,7 +1532,35 @@
                   </li>
                   <li>
                     <a
-                      href="publish/"
+                      href="https://social.postify.app/auth/login"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://social.postify.app/auth/register"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Start Free Trial</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
+              <h4 class="widget-title text-uppercase font-bold mb-20">
+                Product
+              </h4>
+              <div class="menu-legal-container">
+                <ul id="menu-legal" class="menu">
+                  <li>
+                    <a
+                      href="/publish/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
@@ -1716,7 +1569,7 @@
                   </li>
                   <li>
                     <a
-                      href="analytics/"
+                      href="/analytics/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
@@ -1725,237 +1578,66 @@
                   </li>
                   <li>
                     <a
-                      href="https://respona.com/blogger-outreach-software/"
+                      href="/customer-engagement/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
-                      >Blogger Outreach</a
+                      >Customer Engagement</a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://respona.com/podcast-booking-platform/"
+                      href="/ai-creativity/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
-                      >Podcast Booking</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/partner-recruitment-platform/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Partner Recruitment</a
+                      >AI Creativity Content</a
                     >
                   </li>
                 </ul>
               </div>
             </div>
-            <div
-              id="nav_menu-3"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
-            >
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
               <h4 class="widget-title text-uppercase font-bold mb-20">
-                Resources
+                Channels
               </h4>
-              <div class="menu-resources-container">
-                <ul id="menu-resources" class="menu">
-                  <li>
-                    <a
-                      href="https://respona.com/blog/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://help.respona.com/en/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Help Center</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://help.respona.com/en/collections/3195481-outreach-strategy-hub"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Outreach Strategy Hub</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/glossary/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Link Building Glossary</a
-                    >
-                  </li>
-                  <li class="hiring">
-                    <a
-                      target="_blank"
-                      rel="noopener external noreferrer"
-                      href="https://respona.notion.site/Respona-Careers-712c9b2fdb2c4fffb3a63b76223aff29"
-                      data-wpel-link="external"
-                      >Careers</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              id="nav_menu-7"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
-            >
-              <h4 class="widget-title text-uppercase font-bold mb-20">
-                Compare
-              </h4>
-              <div class="menu-comparisons-container">
-                <ul id="menu-comparisons" class="menu">
-                  <li>
-                    <a
-                      href="https://respona.com/comparisons/pitchbox-alternative/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Pitchbox Alternative</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/comparisons/buzzstream-alternative/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >BuzzStream Alternative</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/comparisons/ninjaoutreach-alternative/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >NinjaOutreach Alternative</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/comparisons/mailshake-alternative/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Mailshake Alternative</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              id="nav_menu-4"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
-            >
-              <h4 class="widget-title text-uppercase font-bold mb-20">
-                Product
-              </h4>
-              <div class="menu-product-container">
-                <ul id="menu-product" class="menu">
-                  <li>
-                    <a
-                      href="https://respona.com/pricing/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/case-studies/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Case Studies</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/demo/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Demo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/email-finder/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Email Finder</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/email-verifier/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Email Verifier</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://respona.com/integrations/"
-                      data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
-                      >Integrations</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              id="nav_menu-5"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
-            >
-              <h4 class="widget-title text-uppercase font-bold mb-20">Legal</h4>
               <div class="menu-legal-container">
                 <ul id="menu-legal" class="menu">
                   <li>
                     <a
-                      href="https://respona.com/terms-of-use/"
+                      href="/chanels/instagram/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
-                      >Terms of Use</a
+                      >Instagram</a
                     >
                   </li>
                   <li>
                     <a
-                      href="privacy-policy/"
+                      href="/chanels/facebook/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
-                      >Privacy Policy</a
+                      >Facebook</a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://respona.com/dpa/"
+                      href="/chanels/twitter/"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
-                      >DPA</a
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/chanels/linkedin/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >LinkedIn</a
                     >
                   </li>
                 </ul>
@@ -1963,6 +1645,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center" >
+        
+        
       </div>
     </footer>
     <script

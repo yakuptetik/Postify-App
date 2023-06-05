@@ -1007,25 +1007,25 @@
                 <div class="respona-toggle-bar"></div>
               </div>
             </div>
-            <div class="respona-features-table-wrapper mt-lg-100" v-cloak>
+            <div class="postify-features-table-wrapper mt-lg-100" v-cloak>
               <div class="container p-0">
-                <div class="respona-features-table">
-                  <div class="respona-features-header d-none d-lg-block">
+                <div class="postify-features-table">
+                  <div class="postify-features-header d-none d-lg-block">
                     <div class="row align-items-center">
                       <div class="col-lg-4 ps-lg-2">
                         <h3
-                          class="respona-features-header-title mb-0"
+                          class="postify-features-header-title mb-0"
                           v-html="strings.features"
                         ></h3>
                       </div>
                       <div class="col-lg-4 px-lg-5">
-                        <div class="respona-features-header-option">
+                        <div class="postify-features-header-option">
                           <p
-                            class="respona-features-header-option-title text-center mb-20 font-medium"
+                            class="postify-features-header-option-title text-center mb-20 font-medium"
                             v-html="strings.starter"
                           ></p>
                           <p
-                            class="respona-features-header-option-price text-center font-semi-bold text-primary"
+                            class="postify-features-header-option-price text-center font-semi-bold text-primary"
                             v-html="currentPlan == 'monthly' ? settings.monthly.starterTotal : settings.yearly.starterTotal"
                           ></p>
                           <p class="mb-0">
@@ -1042,13 +1042,13 @@
                         </div>
                       </div>
                       <div class="col-lg-4 px-lg-5">
-                        <div class="respona-features-header-option">
+                        <div class="postify-features-header-option">
                           <p
-                            class="respona-features-header-option-title text-center font-medium"
+                            class="postify-features-header-option-title text-center font-medium"
                             v-html="strings.unlimited"
                           ></p>
                           <p
-                            class="respona-features-header-option-price text-center font-semi-bold text-primary"
+                            class="postify-features-header-option-price text-center font-semi-bold text-primary"
                             v-html="currentPlan == 'monthly' ? settings.monthly.unlimitedTotal : settings.yearly.unlimitedTotal"
                           ></p>
                           <p class="mb-0">
@@ -1067,20 +1067,20 @@
                     </div>
                   </div>
                   <div
-                    class="respona-features-section"
+                    class="postify-features-section"
                     :class="featureClass(indexFeature)"
                     v-for="(feature, indexFeature) in features"
                     :key="'feature' + indexFeature"
                   >
-                    <div class="respona-features-heading">
+                    <div class="postify-features-heading">
                       <h4
-                        class="respona-features-heading-title font-medium"
+                        class="postify-features-heading-title font-medium"
                         v-html="feature.section"
                       ></h4>
                     </div>
                     <div :id="'feature_' + indexFeature">
                       <div
-                        class="respona-features-item"
+                        class="postify-features-item"
                         v-if="feature.features && feature.features.length"
                         v-for="(item, indexItem) in feature.features"
                         :key="'item' + indexItem"
@@ -1634,7 +1634,7 @@
             </div>
             <div
               id="nav_menu-2"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
+              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 "
             >
               <h4 class="widget-title text-uppercase font-bold mb-20">
                 Use cases
@@ -1709,7 +1709,7 @@
             </div>
             <div
               id="nav_menu-3"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
+              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 "
             >
               <h4 class="widget-title text-uppercase font-bold mb-20">
                 Resources
@@ -1766,7 +1766,7 @@
             </div>
             <div
               id="nav_menu-7"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
+              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 "
             >
               <h4 class="widget-title text-uppercase font-bold mb-20">
                 Compare
@@ -1814,7 +1814,7 @@
             </div>
             <div
               id="nav_menu-4"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
+              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 "
             >
               <h4 class="widget-title text-uppercase font-bold mb-20">
                 Product
@@ -1881,7 +1881,7 @@
             </div>
             <div
               id="nav_menu-5"
-              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 widget_nav_menu"
+              class="widget text-center text-lg-start col-lg mb-lg-0 mb-100 "
             >
               <h4 class="widget-title text-uppercase font-bold mb-20">Legal</h4>
               <div class="menu-legal-container">

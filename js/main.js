@@ -1,40 +1,45 @@
 (function ($) {
   "use strict";
-  firstInteraction();
 
-  if(window.location.pathname === "/")  {
-    $("header").css('opacity', 0);
+  if(window.location.pathname === "/" && window.innerWidth > 1024)  {
+    $("#header").css('opacity', 0);
+
+    document.addEventListener('scroll', () => {
+      $('#header').css('opacity', 1);
+    })
 
     setTimeout(() => {
-      $("header").css('opacity', 1);
+      $("#header").css('opacity', 1);
     }, 4000);
   } else {
-    $("header").css('opacity', 1);
+    $("#header").css('opacity', 1);
   }
+  document.querySelector("body").classList.add("loaded");
+  // firstInteraction();
 
-  var userInteracted = false;
-  function firstInteraction() {
-    if (!userInteracted) {
-      userInteracted = true;
-      if (window.pageYOffset >= 1) {
-        $("#header").addClass("shifted");
-        setTimeout(function () {
-          $("#header").addClass("sticky");
-          document.querySelector("body").classList.add("loaded");
-        }, 50);
-      } else {
-        document.querySelector("body").classList.add("loaded");
-      }
-      setTimeout(function () {
-        $("#header").removeClass("shifted");
-      }, 100);
-    }
-  }
+  // var userInteracted = false;
+  // function firstInteraction() {
+  //   if (!userInteracted) {
+  //     userInteracted = true;
+  //     if (window.pageYOffset >= 81) {
+  //       $("#header").addClass("shifted");
+  //       setTimeout(function () {
+  //         $("#header").addClass("sticky");
+  //         document.querySelector("body").classList.add("loaded");
+  //       }, 50);
+  //     } else {
+  //       document.querySelector("body").classList.add("loaded");
+  //     }
+  //     setTimeout(function () {
+  //       $("#header").removeClass("shifted");
+  //     }, 100);
+  //   }
+  // }
   $(document).ready(function () {
     document.querySelector("body").classList.add("ready");
   });
   window.addEventListener("scroll", function (e) {
-    if (window.pageYOffset >= 1) {
+    if (window.pageYOffset >= 81) {
       if (
         !(
           $("#header").hasClass("top") &&

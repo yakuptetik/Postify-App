@@ -547,7 +547,7 @@ progress {
 .container-lg,
 .container-xl {
   width: 100%;
-
+padding: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -3092,7 +3092,7 @@ fieldset:disabled .btn {
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  padding: 0.5rem 0;
+  padding: 5px;
   margin: 0;
   font-size: 1rem;
   color: #424f65;
@@ -3101,7 +3101,7 @@ fieldset:disabled .btn {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 10px;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3236,7 +3236,7 @@ fieldset:disabled .btn {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -3248,6 +3248,7 @@ fieldset:disabled .btn {
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #1e2125;
+  border-radius: 5px;
   background-color: #e9ecef;
 }
 .dropdown-item.active,
