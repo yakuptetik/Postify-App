@@ -832,10 +832,7 @@ section {
 .glossaryhero {
   padding-top: 100px;
 }
-.loaded .integrationshero,
-.loaded.layout main {
-  padding-top: 160px;
-}
+
 @media (max-width: 1023.98px) {
   .homehero,
   .usecasehero,
