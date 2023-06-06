@@ -2517,7 +2517,7 @@ article.term > ol > li h4 {
 
 .custom-dropdown-item {
    display: block;
-  width: 100%;
+
   padding: 0.5rem;
   clear: both;
   font-weight: 400;
@@ -2529,14 +2529,14 @@ article.term > ol > li h4 {
 }
 
 .navbar_child {
-  padding:10px 30px ;
+  padding:5px ;
   display: flex;
   justify-content: center;
 
 }
 .navbar_child a{
   padding:10px 30px ;
-
+width: 300px;
   display: flex;
   justify-content: center!important;
  
@@ -2614,7 +2614,7 @@ article.term > ol > li h4 {
 .video-container {
   position: relative;
   border-radius: 15px !important;
-  object-fit: cover;
+  height: 100%;
 }
 
 video {
