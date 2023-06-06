@@ -2536,9 +2536,9 @@ article.term > ol > li h4 {
 }
 .navbar_child a{
   padding:10px 30px ;
-width: 300px;
+width: 260px;
   display: flex;
-  justify-content: center!important;
+  justify-content: start!important;
  
 }
 
