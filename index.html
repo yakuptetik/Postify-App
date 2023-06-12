@@ -127,17 +127,13 @@
       type="0d64ef34186e113f922cddf1-text/javascript"
     ></script>
   </head>
-  <body
-    class="home page d-flex flex-column no-webp homepage group-blog unknown-os unknown-browser"
-  >
+  <body class="home page d-flex flex-column no-webp homepage group-blog unknown-os unknown-browser">
     <div id="view" class="flex-grow-1">
       <!-- mobil navbar -->
       <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content d-flex">
-            <div
-              class="container flex-grow-1 d-flex align-items-center justify-content-center"
-            >
+            <div class="container flex-grow-1 d-flex align-items-center justify-content-center">
               <ul id="menu-main-menu" class="menu">
                 <li class="nav-item">
                   <a
@@ -491,23 +487,23 @@
                             </a> 
                             </div>
                             
-<div  class="navbar_child">
- <a
-                              href="/chanels/linkedin/"
-                              class=" d-flex align-items-center"
-                            >
-                              <img
-                                height="30px"
-                                width="30px"
-                                src="/images/linkedin-navbar.png"
-                                alt=""
-                              />
+                          <div  class="navbar_child">
+                            <a
+                                href="/chanels/linkedin/"
+                                class=" d-flex align-items-center"
+                              >
+                                <img
+                                  height="30px"
+                                  width="30px"
+                                  src="/images/linkedin-navbar.png"
+                                  alt=""
+                                />
 
-                              <div class="custom-dropdown-item">
-                                <strong>Linkedln </strong>
-                              </div>
-</a>
-</div>
+                                <div class="custom-dropdown-item">
+                                  <strong>Linkedln </strong>
+                                </div>
+                            </a>
+                          </div>
                            
                           </div>
                         </div>
@@ -528,7 +524,7 @@
                     <a
                       target="_blank"
                       rel="noopener follow"
-                      href="https://app.respona.com/login"
+                      href="https://social.postify.app/auth/login"
                       class="nav-link"
                       data-wpel-link="internal"
                       >Login</a
@@ -1472,7 +1468,7 @@
               >
                 <li>
                   <a
-                    href="https://www.instagram.com/plandy_co/?igshid=MzRlODBiNWFlZA%3D%3D"
+                    href="https://www.instagram.com/ron.digital/"
                     title="Facebook"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
@@ -1490,7 +1486,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/showcase/plandy-app/about/"
+                    href="https://tr.linkedin.com/company/ron-digital"
                     title="LinkedIn"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
@@ -1507,7 +1503,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/plandy_co"
+                    href="https://twitter.com/RonDigitall"
                     title="Twitter"
                     target="_blank"
                     rel="nofollow noopener noreferrer external"
@@ -1714,81 +1710,7 @@
     <script
       id="respona-flickity-js-after"
       type="0d64ef34186e113f922cddf1-text/javascript"
-    >
-      (function(){
-          'use strict';
-          document.addEventListener( 'DOMContentLoaded', function(event) {
-              const slider = new Flickity( document.querySelector('#respona-tabs-645bb500caef9'), {
-                  freeScroll: true,
-                  contain: true,
-                  prevNextButtons: false,
-                  pageDots: false,
-                  accessability: false
-              });
-              slider.on( 'select', function() {
-                  if ( ! slider.selectedElement.querySelector('button').classList.contains('active') ) slider.selectedElement.querySelector('button').click();
-              });
-              document.querySelectorAll('#respona-tabs-645bb500caef9 button').forEach(function(el,i){
-                  el.addEventListener('click',function(e){
-                      slider.select(i);
-                  });
-              });
-              function selectSlide(){
-
-              }
-          });
-      })();
-      (function() {
-          var touchingCarousel = false
-            , touchStartCoords
-
-          document.body.addEventListener('touchstart', function(e) {
-            if (e.target.closest('.respona-tabs .nav-item')) {
-              touchingCarousel = true
-            } else {
-              touchingCarousel = false
-              return
-            }
-
-            touchStartCoords = {
-              x: e.touches[0].pageX,
-              y: e.touches[0].pageY
-            }
-          })
-
-          document.body.addEventListener('touchmove', function(e) {
-            if (!(touchingCarousel && e.cancelable)) return
-
-            var moveVector = {
-              x: e.touches[0].pageX - touchStartCoords.x,
-              y: e.touches[0].pageY - touchStartCoords.y
-            }
-
-            if (Math.abs(moveVector.x) > Flickity.defaults.dragThreshold)
-              e.preventDefault()
-
-          }, {passive: false})
-
-          if (!Element.prototype.matches) {
-            Element.prototype.matches =
-              Element.prototype.msMatchesSelector ||
-              Element.prototype.webkitMatchesSelector
-          }
-
-          if (!Element.prototype.closest) {
-            Element.prototype.closest =
-              function(s) {
-                var el = this
-
-                do {
-                  if (el.matches(s)) return el
-                  el = el.parentElement || el.parentNode
-                } while (el !== null && el.nodeType === 1)
-                return null
-              }
-          }
-      })();
-    </script>
+    ></script>
     <script
       src="/js/jquery.scrollTo.min.js"
       id="respona-scrollTo-js"

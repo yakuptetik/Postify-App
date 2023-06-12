@@ -15,26 +15,24 @@
     $("#header").css('opacity', 1);
   }
   document.querySelector("body").classList.add("loaded");
-  // firstInteraction();
+  firstInteraction();
 
-  // var userInteracted = false;
-  // function firstInteraction() {
-  //   if (!userInteracted) {
-  //     userInteracted = true;
-  //     if (window.pageYOffset >= 81) {
-  //       $("#header").addClass("shifted");
-  //       setTimeout(function () {
-  //         $("#header").addClass("sticky");
-  //         document.querySelector("body").classList.add("loaded");
-  //       }, 50);
-  //     } else {
-  //       document.querySelector("body").classList.add("loaded");
-  //     }
-  //     setTimeout(function () {
-  //       $("#header").removeClass("shifted");
-  //     }, 100);
-  //   }
-  // }
+  var userInteracted = false;
+  function firstInteraction() {
+    if (!userInteracted) {
+      userInteracted = true;
+      if (window.pageYOffset >= 81) {
+        $("#header").addClass("shifted");
+        setTimeout(function () {
+          $("#header").addClass("sticky");
+          document.querySelector("body").classList.add("loaded");
+        }, 50);
+      } else {
+        document.querySelector("body").classList.add("loaded");
+      }
+     
+    }
+  }
   $(document).ready(function () {
     document.querySelector("body").classList.add("ready");
   });
