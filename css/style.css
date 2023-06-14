@@ -541,9 +541,9 @@ body:not(.menu-open) .respona-modal .modal-dialog {
 
   will-change: transform;
 }
-.loaded #header {
+/* .loaded #header {
   position: relative;
-}
+} */
 .loaded #header.sticky {
   position: sticky;
 }
