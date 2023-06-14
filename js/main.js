@@ -22,7 +22,7 @@
   function firstInteraction() {
     if (!userInteracted) {
       userInteracted = true;
-      if (window.pageYOffset >= 81) {
+      if (window.pageYOffset >= 100) {
         $("#header").addClass("shifted");
         setTimeout(function () {
           $("#header").addClass("sticky");
