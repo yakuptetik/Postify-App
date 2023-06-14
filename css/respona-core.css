@@ -489,7 +489,6 @@
 .postify-feature img {
   max-width: 100%;
   height: auto;
-  opacity: 0;
   transition: opacity 0.3s ease-out;
 }
 .postify-feature img.lazyloaded {
@@ -556,7 +555,7 @@
 .respona-cta-wrapper .cover img {
   max-width: 100%;
   height: auto;
-  opacity: 0;
+ 
   transition: opacity 0.3s ease-out;
 }
 .respona-cta-wrapper .cover img.lazyloaded {
