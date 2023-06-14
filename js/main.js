@@ -6,6 +6,7 @@
 
     document.addEventListener('scroll', () => {
       $('#header').css('opacity', 1);
+      console.log('triggered')
     })
 
     setTimeout(() => {
