@@ -561,9 +561,7 @@ body:not(.menu-open) .respona-modal .modal-dialog {
   background-color: #fff !important;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
 }
-#header.shifted {
-  transform: translateY(-100%);
-}
+
 
 .with-hero-gradient:not(.menu-open) #header .navbar-brand svg path {
   fill: #fff;
