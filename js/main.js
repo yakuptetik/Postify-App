@@ -6,7 +6,7 @@
 
     document.addEventListener('scroll', () => {
       $('#header').css('opacity', 1);
-      console.log('triggered')
+      
     })
 
     setTimeout(() => {
@@ -22,15 +22,15 @@
   function firstInteraction() {
     if (!userInteracted) {
       userInteracted = true;
-      if (window.pageYOffset >= 100) {
-        $("#header").addClass("shifted");
-        setTimeout(function () {
-          $("#header").addClass("sticky");
-          document.querySelector("body").classList.add("loaded");
-        }, 50);
-      } else {
-        document.querySelector("body").classList.add("loaded");
-      }
+      // if (window.pageYOffset >= 100) {
+      //   $("#header").addClass("shifted");
+      //   setTimeout(function () {
+      //     $("#header").addClass("sticky");
+      //     document.querySelector("body").classList.add("loaded");
+      //   }, 50);
+      // } else {
+      //   document.querySelector("body").classList.add("loaded");
+      // }
      
     }
   }
