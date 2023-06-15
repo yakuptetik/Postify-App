@@ -220,3 +220,13 @@ container.addEventListener("mouseleave", () => {
   video.pause();
 });
 }
+
+if (element.nodeName.toLowerCase() === 'video' && !element.getAttribute('data-src')) {
+  if (element.childNodes) {
+      var childs = element.childNodes;
+      for (var i = 1; i < childs.length - 1; i++) {
+          childs[i].src = childs[i].getAttribute('data-src');
+      }
+      element.load();
+  }
+}
