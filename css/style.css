@@ -1317,8 +1317,8 @@ section {
 .usecasehero .brands {
   margin-top: 50px;
 }
-.brands {
-  margin-top: 100px;
+.brand {
+  margin-top: 80px;
 }
 @media (min-width: 768px) {
   .brands p {
