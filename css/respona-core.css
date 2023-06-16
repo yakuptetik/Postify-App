@@ -589,7 +589,7 @@
 .respona-video-story {
   position: relative;
   overflow: hidden;
-  margin: 100px -15px;
+  margin: 100px 0px;
 }
 @media (min-width: 576px) {
   .respona-video-story:after {
