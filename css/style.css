@@ -538,7 +538,6 @@ body:not(.menu-open) .respona-modal .modal-dialog {
   left: 0;
   width: 100%;
   background-color: transparent;
-
   will-change: transform;
 }
 /* .loaded #header {
@@ -1319,6 +1318,7 @@ section {
 }
 .brand {
   margin-top: 80px;
+ 
 }
 @media (min-width: 768px) {
   .brands p {
@@ -2725,3 +2725,6 @@ video {
 .footer-link:hover{
   color: white;
 }
+
+
+
