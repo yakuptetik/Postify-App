@@ -547,7 +547,7 @@
 }
 .respona-cta-wrapper .cover {
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: -40px;
   width: 45%;
   transform: translateY(-50%);
