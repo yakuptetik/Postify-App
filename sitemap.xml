@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.postify.app/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/publish/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/analytics/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/customer-engagement/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/ai-creativity/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/chanels/facebook/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/chanels/instagram/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/chanels/twitter/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/chanels/linkedin/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/pricing/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/publish</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/privacy-policy/</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/analytics</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/customer-engagement</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.postify.app/ai-creativity</loc>
+  <lastmod>2023-06-19T13:58:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
