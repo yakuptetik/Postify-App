@@ -1,1 +1,62 @@
-@font-face{font-family:oakesgrotesk-regular;src:url(../fonts/oakes-grotesk-regular.eot);src:url(../fonts/oakes-grotesk-regular.eot#iefix) format('embedded-opentype'),url(../fonts/oakes-grotesk-regular.woff2) format('woff2'),url(../fonts/oakes-grotesk-regular.woff) format('woff'),url(../fonts/oakes-grotesk-regular.ttf) format('truetype'),url(../fonts/oakes-grotesk-regular.svg#youworkforthem) format('svg');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:oakesgrotesk-medium;src:url(../fonts/oakes-grotesk-medium.eot);src:url(../fonts/oakes-grotesk-medium.eot#iefix) format('embedded-opentype'),url(../fonts/oakes-grotesk-medium.woff2) format('woff2'),url(../fonts/oakes-grotesk-medium.woff) format('woff'),url(../fonts/oakes-grotesk-medium.ttf) format('truetype'),url(../fonts/oakes-grotesk-medium.svg#youworkforthem) format('svg');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:oakesgrotesk-mediumitalic;src:url(../fonts/oakes-grotesk-medium-italic.eot);src:url(../fonts/oakes-grotesk-medium-italic.eot#iefix) format('embedded-opentype'),url(../fonts/oakes-grotesk-medium-italic.woff2) format('woff2'),url(../fonts/oakes-grotesk-medium-italic.woff) format('woff'),url(../fonts/oakes-grotesk-medium-italic.ttf) format('truetype'),url(../fonts/oakes-grotesk-medium-italic.svg#youworkforthem) format('svg');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:oakesgrotesk-semi-bold;src:url(../fonts/oakes-grotesk-semi-bold.eot);src:url(../fonts/oakes-grotesk-semi-bold.eot#iefix) format('embedded-opentype'),url(../fonts/oakes-grotesk-semi-bold.woff2) format('woff2'),url(../fonts/oakes-grotesk-semi-bold.woff) format('woff'),url(../fonts/oakes-grotesk-semi-bold.ttf) format('truetype'),url(../fonts/oakes-grotesk-semi-bold.svg#youworkforthem) format('svg');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:oakesgrotesk-bold;src:url(../fonts/oakes-grotesk-bold.eot);src:url(../fonts/oakes-grotesk-bold.eot#iefix) format('embedded-opentype'),url(../fonts/oakes-grotesk-bold.woff2) format('woff2'),url(../fonts/oakes-grotesk-bold.woff) format('woff'),url(../fonts/oakes-grotesk-bold.ttf) format('truetype'),url(../fonts/oakes-grotesk-bold.svg#youworkforthem) format('svg');font-weight:400;font-style:normal;font-display:swap}
+@font-face {
+  font-family: oakesgrotesk-regular;
+  src: url(../fonts/oakes-grotesk-regular.eot);
+  src: url(../fonts/oakes-grotesk-regular.eot#iefix) format("embedded-opentype"),
+    url(../fonts/oakes-grotesk-regular.woff2) format("woff2"),
+    url(../fonts/oakes-grotesk-regular.woff) format("woff"),
+    url(../fonts/oakes-grotesk-regular.ttf) format("truetype"),
+    url(../fonts/oakes-grotesk-regular.svg#youworkforthem) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: oakesgrotesk-medium;
+  src: url(../fonts/oakes-grotesk-medium.eot);
+  src: url(../fonts/oakes-grotesk-medium.eot#iefix) format("embedded-opentype"),
+    url(../fonts/oakes-grotesk-medium.woff2) format("woff2"),
+    url(../fonts/oakes-grotesk-medium.woff) format("woff"),
+    url(../fonts/oakes-grotesk-medium.ttf) format("truetype"),
+    url(../fonts/oakes-grotesk-medium.svg#youworkforthem) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: oakesgrotesk-mediumitalic;
+  src: url(../fonts/oakes-grotesk-medium-italic.eot);
+  src: url(../fonts/oakes-grotesk-medium-italic.eot#iefix)
+      format("embedded-opentype"),
+    url(../fonts/oakes-grotesk-medium-italic.woff2) format("woff2"),
+    url(../fonts/oakes-grotesk-medium-italic.woff) format("woff"),
+    url(../fonts/oakes-grotesk-medium-italic.ttf) format("truetype"),
+    url(../fonts/oakes-grotesk-medium-italic.svg#youworkforthem) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: oakesgrotesk-semi-bold;
+  src: url(../fonts/oakes-grotesk-semi-bold.eot);
+  src: url(../fonts/oakes-grotesk-semi-bold.eot#iefix)
+      format("embedded-opentype"),
+    url(../fonts/oakes-grotesk-semi-bold.woff2) format("woff2"),
+    url(../fonts/oakes-grotesk-semi-bold.woff) format("woff"),
+    url(../fonts/oakes-grotesk-semi-bold.ttf) format("truetype"),
+    url(../fonts/oakes-grotesk-semi-bold.svg#youworkforthem) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: oakesgrotesk-bold;
+  src: url(../fonts/oakes-grotesk-bold.eot);
+  src: url(../fonts/oakes-grotesk-bold.eot#iefix) format("embedded-opentype"),
+    url(../fonts/oakes-grotesk-bold.woff2) format("woff2"),
+    url(../fonts/oakes-grotesk-bold.woff) format("woff"),
+    url(../fonts/oakes-grotesk-bold.ttf) format("truetype"),
+    url(../fonts/oakes-grotesk-bold.svg#youworkforthem) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
