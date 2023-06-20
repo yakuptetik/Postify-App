@@ -117,7 +117,7 @@
       }
     });
   }
-  function responaCreateCookie(name, value, days) {
+  function postifyCreateCookie(name, value, days) {
     if (days) {
       var date = new Date();
       date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
@@ -125,7 +125,7 @@
     } else var expires = "";
     document.cookie = name + "=" + value + expires + "; path=/";
   }
-  function responaReadCookie(name) {
+  function postifyReadCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(";");
     for (var i = 0; i < ca.length; i++) {
@@ -135,7 +135,7 @@
     }
     return null;
   }
-  function responaParseQuery(queryString) {
+  function postifyParseQuery(queryString) {
     var query = {};
     var pairs = (
       queryString[0] === "?" ? queryString.substr(1) : queryString
@@ -147,24 +147,24 @@
     return query;
   }
   $(document).ready(function () {
-    var ref = responaReadCookie("respona_ref") || "";
-    var utm_source = responaReadCookie("respona_utm_source") || "";
-    var utm_source_id = responaReadCookie("respona_utm_source_id") || "";
-    const queries = responaParseQuery(window.location.search);
+    var ref = postifyReadCookie("postify_ref") || "";
+    var utm_source = postifyReadCookie("postify_utm_source") || "";
+    var utm_source_id = postifyReadCookie("postify_utm_source_id") || "";
+    const queries = postifyParseQuery(window.location.search);
     if (ref || (queries.hasOwnProperty("ref") && queries.ref)) {
       if (queries.hasOwnProperty("ref") && queries.ref) {
-        responaCreateCookie("respona_ref", queries.ref, 30);
+        postifyCreateCookie("postify_ref", queries.ref, 30);
         ref = queries.ref;
-        document.cookie = "respona_utm_source" + "=; Max-Age=-99999999;";
-        document.cookie = "respona_utm_source_id" + "=; Max-Age=-99999999;";
+        document.cookie = "postify_utm_source" + "=; Max-Age=-99999999;";
+        document.cookie = "postify_utm_source_id" + "=; Max-Age=-99999999;";
         utm_source = utm_source_id = "";
         if (queries.hasOwnProperty("utm_source") && queries.utm_source) {
-          responaCreateCookie("respona_utm_source", queries.utm_source, 30);
+          postifyCreateCookie("postify_utm_source", queries.utm_source, 30);
           utm_source = queries.utm_source;
         }
         if (queries.hasOwnProperty("utm_source_id") && queries.utm_source_id) {
-          responaCreateCookie(
-            "respona_utm_source_id",
+          postifyCreateCookie(
+            "postify_utm_source_id",
             queries.utm_source_id,
             30
           );

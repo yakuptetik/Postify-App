@@ -1,4 +1,4 @@
-class ResponaFirstInteraction {
+class PostifyFirstInteraction {
   constructor() {
     (this.triggerEvents = [
       "keydown",
@@ -51,7 +51,7 @@ class ResponaFirstInteraction {
       }),
       window.addEventListener("mousemove", this.touchMoveHandler),
       e.target.addEventListener("click", this.clickHandler),
-      this._renameDOMAttribute(e.target, "onclick", "respona-onclick"));
+      this._renameDOMAttribute(e.target, "onclick", "postify-onclick"));
   }
   _onTouchMove(e) {
     window.removeEventListener("touchend", this.touchEndHandler),
@@ -61,7 +61,7 @@ class ResponaFirstInteraction {
       }),
       window.removeEventListener("mousemove", this.touchMoveHandler),
       e.target.removeEventListener("click", this.clickHandler),
-      this._renameDOMAttribute(e.target, "respona-onclick", "onclick");
+      this._renameDOMAttribute(e.target, "postify-onclick", "onclick");
   }
   _onTouchEnd(e) {
     window.removeEventListener("touchend", this.touchEndHandler),
@@ -73,7 +73,7 @@ class ResponaFirstInteraction {
   }
   _onClick(e) {
     e.target.removeEventListener("click", this.clickHandler),
-      this._renameDOMAttribute(e.target, "respona-onclick", "onclick"),
+      this._renameDOMAttribute(e.target, "postify-onclick", "onclick"),
       this.interceptedClicks.push(e),
       e.preventDefault(),
       e.stopPropagation(),
@@ -107,14 +107,14 @@ class ResponaFirstInteraction {
   }
   _preconnect3rdParties() {
     let e = [];
-    document.querySelectorAll("script[type=responascript]").forEach((t) => {
+    document.querySelectorAll("script[type=postifyscript]").forEach((t) => {
       if (t.hasAttribute("src")) {
         const n = new URL(t.src).origin;
         n !== location.origin &&
           e.push({
             src: n,
             crossOrigin:
-              t.crossOrigin || "module" === t.getAttribute("data-respona-type"),
+              t.crossOrigin || "module" === t.getAttribute("data-postify-type"),
           });
       }
     }),
@@ -134,16 +134,16 @@ class ResponaFirstInteraction {
     try {
       await this._triggerDOMContentLoaded(), await this._triggerWindowLoad();
     } catch (e) {}
-    window.dispatchEvent(new Event("respona-allScriptsLoaded")),
+    window.dispatchEvent(new Event("postify-allScriptsLoaded")),
       this._replayClicks();
   }
   _registerAllDelayedScripts() {
-    document.querySelectorAll("script[type=responascript]").forEach((e) => {
+    document.querySelectorAll("script[type=postifyscript]").forEach((e) => {
       e.hasAttribute("src")
         ? e.hasAttribute("async") && !1 !== e.async
           ? this.delayedScripts.async.push(e)
           : (e.hasAttribute("defer") && !1 !== e.defer) ||
-            "module" === e.getAttribute("data-respona-type")
+            "module" === e.getAttribute("data-postify-type")
           ? this.delayedScripts.defer.push(e)
           : this.delayedScripts.normal.push(e)
         : this.delayedScripts.normal.push(e);
@@ -157,7 +157,7 @@ class ResponaFirstInteraction {
         [...e.attributes].forEach((e) => {
           let t = e.nodeName;
           "type" !== t &&
-            ("data-respona-type" === t && (t = "type"),
+            ("data-postify-type" === t && (t = "type"),
             n.setAttribute(t, e.nodeValue));
         }),
           e.hasAttribute("src")
@@ -196,7 +196,7 @@ class ResponaFirstInteraction {
           (i.rel = t),
           "preconnect" !== t && (i.as = "script"),
           e.getAttribute &&
-            "module" === e.getAttribute("data-respona-type") &&
+            "module" === e.getAttribute("data-postify-type") &&
             (i.crossOrigin = !0),
           e.crossOrigin && (i.crossOrigin = e.crossOrigin),
           n.appendChild(i);
@@ -209,7 +209,7 @@ class ResponaFirstInteraction {
     function t(t, n) {
       !(function (t) {
         function n(n) {
-          return e[t].eventsToRewrite.indexOf(n) >= 0 ? "respona-" + n : n;
+          return e[t].eventsToRewrite.indexOf(n) >= 0 ? "postify-" + n : n;
         }
         e[t] ||
           ((e[t] = {
@@ -235,7 +235,7 @@ class ResponaFirstInteraction {
       Object.defineProperty(e, t, {
         get: () => n || function () {},
         set(i) {
-          e["respona" + t] = n = i;
+          e["postify" + t] = n = i;
         },
       });
     }
@@ -257,7 +257,7 @@ class ResponaFirstInteraction {
           n.fn.ready = n.fn.init.prototype.ready = function (t) {
             e.domReadyFired
               ? t.bind(document)(n)
-              : document.addEventListener("respona-DOMContentLoaded", () =>
+              : document.addEventListener("postify-DOMContentLoaded", () =>
                   t.bind(document)(n)
                 );
           };
@@ -270,7 +270,7 @@ class ResponaFirstInteraction {
                     .split(" ")
                     .map((e) =>
                       "load" === e || 0 === e.indexOf("load.")
-                        ? "respona-jquery-load"
+                        ? "postify-jquery-load"
                         : e
                     )
                     .join(" ");
@@ -296,29 +296,29 @@ class ResponaFirstInteraction {
   async _triggerDOMContentLoaded() {
     (this.domReadyFired = !0),
       await this._littleBreath(),
-      document.dispatchEvent(new Event("respona-DOMContentLoaded")),
+      document.dispatchEvent(new Event("postify-DOMContentLoaded")),
       await this._littleBreath(),
-      window.dispatchEvent(new Event("respona-DOMContentLoaded")),
+      window.dispatchEvent(new Event("postify-DOMContentLoaded")),
       await this._littleBreath(),
-      document.dispatchEvent(new Event("respona-readystatechange")),
+      document.dispatchEvent(new Event("postify-readystatechange")),
       await this._littleBreath(),
-      document.responaonreadystatechange &&
-        document.responaonreadystatechange();
+      document.postifyonreadystatechange &&
+        document.postifyonreadystatechange();
   }
   async _triggerWindowLoad() {
     await this._littleBreath(),
-      window.dispatchEvent(new Event("respona-load")),
+      window.dispatchEvent(new Event("postify-load")),
       await this._littleBreath(),
-      window.responaonload && window.responaonload(),
+      window.postifyonload && window.postifyonload(),
       await this._littleBreath(),
-      this.allJQueries.forEach((e) => e(window).trigger("respona-jquery-load")),
+      this.allJQueries.forEach((e) => e(window).trigger("postify-jquery-load")),
       await this._littleBreath();
-    const e = new Event("respona-pageshow");
+    const e = new Event("postify-pageshow");
     (e.persisted = this.persisted),
       window.dispatchEvent(e),
       await this._littleBreath(),
-      window.responaonpageshow &&
-        window.responaonpageshow({ persisted: this.persisted });
+      window.postifyonpageshow &&
+        window.postifyonpageshow({ persisted: this.persisted });
   }
   _handleDocumentWrite() {
     const e = new Map();
@@ -344,8 +344,8 @@ class ResponaFirstInteraction {
       : new Promise((e) => requestAnimationFrame(e));
   }
   static run() {
-    const e = new ResponaFirstInteraction();
+    const e = new PostifyFirstInteraction();
     e._addUserInteractionListener(e);
   }
 }
-ResponaFirstInteraction.run();
+PostifyFirstInteraction.run();

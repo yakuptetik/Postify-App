@@ -1,9 +1,9 @@
-var responaScrollMagicController = new ScrollMagic.Controller();
+var postifyScrollMagicController = new ScrollMagic.Controller();
 window.URL = window.URL || window.webkitURL;
 (function ($) {
   "use strict";
   if (window.safari !== undefined) {
-    $(".respona-tabs video").each(function () {
+    $(".postify-tabs video").each(function () {
       var self = $(this).parent();
       $(this)
         .parent()
@@ -15,17 +15,17 @@ window.URL = window.URL || window.webkitURL;
       $(this).remove();
     });
   }
-  $(".respona-tabs video").on("play", function () {
+  $(".postify-tabs video").on("play", function () {
     this.currentTime = 0;
   });
-  const tabs = document.querySelector(".respona-tabs");
+  const tabs = document.querySelector(".postify-tabs");
   new ScrollMagic.Scene({
-    triggerElement: ".respona-tabs",
+    triggerElement: ".postify-tabs",
     triggerHook: 0.9,
     offset: 0,
     duration: "200%",
   })
-    .addTo(responaScrollMagicController)
+    .addTo(postifyScrollMagicController)
     .on("enter", function (e) {
       $(e.currentTarget.triggerElement())
         .find(".nav-item")
@@ -34,28 +34,28 @@ window.URL = window.URL || window.webkitURL;
         .trigger("click");
     })
     .on("leave", function (e) {
-      $(".respona-tabs video").each(function () {
+      $(".postify-tabs video").each(function () {
         if ($(this).get(0)) {
           $(this).get(0).pause();
           $(this).get(0).currentTime = 0;
         }
       });
     });
-  $(".respona-tabs button").on("click", function (e) {
+  $(".postify-tabs button").on("click", function (e) {
     e.preventDefault();
-    $(".respona-tabs .nav-link")
+    $(".postify-tabs .nav-link")
       .attr("area-selected", "false")
       .removeClass("active");
-    $(".respona-tabs .tab-videos .tab-pane").attr("data-active", "false");
-    $(".respona-tabs .tab-descriptions .tab-pane").attr("data-active", "false");
+    $(".postify-tabs .tab-videos .tab-pane").attr("data-active", "false");
+    $(".postify-tabs .tab-descriptions .tab-pane").attr("data-active", "false");
     $(e.target).attr("area-selected", "true").addClass("active");
     $($(e.target).data("bs-target")).attr("data-active", "true");
     $($(e.target).data("bs-target") + "-desc").attr("data-active", "true");
-    $(".respona-tabs .fallback").each(function () {
+    $(".postify-tabs .fallback").each(function () {
       $(this).hide();
       $(this).removeAttr("src");
     });
-    $(".respona-tabs video").each(function () {
+    $(".postify-tabs video").each(function () {
       if ($(this).get(0)) {
         $(this).get(0).pause();
         $(this).get(0).currentTime = 0;
@@ -76,10 +76,10 @@ window.URL = window.URL || window.webkitURL;
     var viewportBottom = viewportTop + $(window).height();
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
-  $(".respona-video-story").each(function (i, story) {
+  $(".postify-video-story").each(function (i, story) {
     if (window.safari !== undefined) {
       $(story)
-        .find(".respona-video-story__media-wrapper video")
+        .find(".postify-video-story__media-wrapper video")
         .each(function () {
           var wrapper = $(this).parent();
           var url = $(this).find("source").eq(1).attr("src");
@@ -89,7 +89,7 @@ window.URL = window.URL || window.webkitURL;
           video.onloadedmetadata = function () {
             window.URL.revokeObjectURL(video.src);
             wrapper.append(
-              '<img class="respona-video-story__media fallback lazyloaded" data-active="false" data-duration="' +
+              '<img class="postify-video-story__media fallback lazyloaded" data-active="false" data-duration="' +
                 video.duration +
                 '" data-src="' +
                 url +
@@ -109,15 +109,15 @@ window.URL = window.URL || window.webkitURL;
       offset: 0,
       duration: "200%",
     })
-      .addTo(responaScrollMagicController)
+      .addTo(postifyScrollMagicController)
       .on("enter", function (e) {
         $(e.currentTarget.triggerElement())
-          .find(".respona-video-story__chapter")
+          .find(".postify-video-story__chapter")
           .eq(0)
-          .find(".respona-video-story__trigger")
+          .find(".postify-video-story__trigger")
           .trigger("click");
         $(e.currentTarget.triggerElement())
-          .find(".respona-video-story__chapters-wrapper .container")
+          .find(".postify-video-story__chapters-wrapper .container")
           .get(0)
           .scroll(0, 0);
       })
@@ -125,14 +125,14 @@ window.URL = window.URL || window.webkitURL;
         clearTimeout(timeoutDefault);
         clearTimeout(timeout);
         $(story)
-          .find(".respona-video-story__chapter")
+          .find(".postify-video-story__chapter")
           .each(function (index) {
             $(this).attr("data-active", "false");
             $(this).attr("data-reset", "false");
             $(this).attr("data-past", "false");
           });
         $(story)
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .each(function () {
             $(this).attr("data-active", "false");
             if ($(this).is("video")) $(this).get(0).pause();
@@ -145,25 +145,25 @@ window.URL = window.URL || window.webkitURL;
     var timeout,
       timeoutDefault,
       currentVideo,
-      media = $(story).find(".respona-video-story__media"),
-      trigger = $(story).find(".respona-video-story__trigger");
+      media = $(story).find(".postify-video-story__media"),
+      trigger = $(story).find(".postify-video-story__trigger");
     media.each(function (index, video) {
       var chapters = $(video)
-        .closest(".respona-video-story")
-        .find(".respona-video-story__chapter");
+        .closest(".postify-video-story")
+        .find(".postify-video-story__chapter");
       video.addEventListener(
         "ended",
         function () {
           if (currentVideo != video) return;
           if (
             index <
-            $(video).closest(".respona-video-story__media-container").children()
+            $(video).closest(".postify-video-story__media-container").children()
               .length -
               1
           ) {
             chapters
               .eq(index + 1)
-              .find(".respona-video-story__trigger")
+              .find(".postify-video-story__trigger")
               .trigger("click");
           } else {
             chapters.eq(index).attr("data-past", "true");
@@ -175,7 +175,7 @@ window.URL = window.URL || window.webkitURL;
       video.addEventListener("loadedmetadata", function () {
         chapters
           .eq(index)
-          .find(".respona-video-story__progress")
+          .find(".postify-video-story__progress")
           .css(
             "transition-duration",
             Math.round((video.duration - 0.3 + Number.EPSILON) * 100) / 100 +
@@ -184,10 +184,10 @@ window.URL = window.URL || window.webkitURL;
       });
     });
     trigger.on("click", function () {
-      var container = $(this).closest(".respona-video-story"),
-        chapter = $(this).closest(".respona-video-story__chapter"),
+      var container = $(this).closest(".postify-video-story"),
+        chapter = $(this).closest(".postify-video-story__chapter"),
         currentIndex = chapter.index();
-      container.find(".respona-video-story__chapter").each(function (index) {
+      container.find(".postify-video-story__chapter").each(function (index) {
         $(this).attr("data-active", "false");
         $(this).attr("data-reset", "false");
         index > currentIndex
@@ -197,7 +197,7 @@ window.URL = window.URL || window.webkitURL;
       chapter.attr("data-reset", "true");
       chapter.attr("data-past", "false");
       chapter.attr("data-active", "true");
-      container.find(".respona-video-story__media").each(function () {
+      container.find(".postify-video-story__media").each(function () {
         $(this).attr("data-active", "false");
         if ($(this).is("video")) $(this).get(0).pause();
         if ($(this).hasClass("fallback")) {
@@ -205,31 +205,31 @@ window.URL = window.URL || window.webkitURL;
         }
       });
       container
-        .find(".respona-video-story__media")
+        .find(".postify-video-story__media")
         .eq(currentIndex)
         .attr("data-active", "true");
       if (
         container
-          .find(".respona-video-story__media-wrapper")
+          .find(".postify-video-story__media-wrapper")
           .eq(currentIndex)
           .find("video").length
       ) {
         container
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .eq(currentIndex)
           .get(0).currentTime = 0;
         container
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .eq(currentIndex)
           .get(0)
           .play();
         chapter
-          .find(".respona-video-story__progress")
+          .find(".postify-video-story__progress")
           .css(
             "transition-duration",
             Math.round(
               (container
-                .find(".respona-video-story__media")
+                .find(".postify-video-story__media")
                 .eq(currentIndex)
                 .attr("data-active", "true")
                 .get(0).duration -
@@ -241,12 +241,12 @@ window.URL = window.URL || window.webkitURL;
               "s"
           );
         currentVideo = container
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .eq(currentIndex)
           .get(0);
       } else {
         currentVideo = container
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .eq(currentIndex);
         if (
           $(currentVideo).hasClass("fallback") &&
@@ -254,11 +254,11 @@ window.URL = window.URL || window.webkitURL;
         ) {
           $(currentVideo).attr("src", $(currentVideo).attr("data-src"));
           container
-            .find(".respona-video-story__media")
+            .find(".postify-video-story__media")
             .eq(currentIndex)
             .attr("data-active", "true");
           chapter
-            .find(".respona-video-story__progress")
+            .find(".postify-video-story__progress")
             .css(
               "transition-duration",
               Math.round(
@@ -279,18 +279,18 @@ window.URL = window.URL || window.webkitURL;
       if (chapter.attr("data-type") == "image") {
         timeoutDefault = setTimeout(function () {
           var chapters = $(currentVideo)
-            .closest(".respona-video-story")
-            .find(".respona-video-story__chapter");
+            .closest(".postify-video-story")
+            .find(".postify-video-story__chapter");
           if (
             currentIndex <
             $(currentVideo)
-              .closest(".respona-video-story__media-container")
+              .closest(".postify-video-story__media-container")
               .children().length -
               1
           ) {
             chapters
               .eq(currentIndex + 1)
-              .find(".respona-video-story__trigger")
+              .find(".postify-video-story__trigger")
               .trigger("click");
           } else {
             chapters.eq(currentIndex).attr("data-past", "true");
@@ -300,24 +300,24 @@ window.URL = window.URL || window.webkitURL;
       }
       if (
         container
-          .find(".respona-video-story__media")
+          .find(".postify-video-story__media")
           .eq(currentIndex)
           .hasClass("fallback")
       ) {
         timeoutDefault = setTimeout(function () {
           var chapters = $(currentVideo)
-            .closest(".respona-video-story")
-            .find(".respona-video-story__chapter");
+            .closest(".postify-video-story")
+            .find(".postify-video-story__chapter");
           if (
             currentIndex <
             $(currentVideo)
-              .closest(".respona-video-story__media-container")
+              .closest(".postify-video-story__media-container")
               .children().length -
               1
           ) {
             chapters
               .eq(currentIndex + 1)
-              .find(".respona-video-story__trigger")
+              .find(".postify-video-story__trigger")
               .trigger("click");
           } else {
             chapters.eq(currentIndex).attr("data-past", "true");
@@ -325,20 +325,20 @@ window.URL = window.URL || window.webkitURL;
           }
         }, parseFloat(
           container
-            .find(".respona-video-story__media")
+            .find(".postify-video-story__media")
             .eq(currentIndex)
             .attr("data-duration")
         ) * 1000);
       }
       if (
         $(story)
-          .find(".respona-video-story__chapters-wrapper .container")
+          .find(".postify-video-story__chapters-wrapper .container")
           .find(chapter)
           .isInViewport() &&
         window.matchMedia("(max-width: 1023.98px)").matches
       ) {
         $(story)
-          .find(".respona-video-story__chapters-wrapper .container")
+          .find(".postify-video-story__chapters-wrapper .container")
           .find(chapter)
           .get(0)
           .scrollIntoView({
