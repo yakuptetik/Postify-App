@@ -194,6 +194,7 @@ class PostifyFirstInteraction {
         const i = document.createElement("link");
         (i.href = e.src),
           (i.rel = t),
+          console.log({e, i, t})
           "preconnect" !== t && (i.as = "script"),
           e.getAttribute &&
             "module" === e.getAttribute("data-postify-type") &&
@@ -203,6 +204,7 @@ class PostifyFirstInteraction {
       }
     }),
       document.head.appendChild(n);
+      console.log(n);
   }
   _delayEventListeners() {
     let e = {};

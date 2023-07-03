@@ -1,21 +1,23 @@
+
+if((window.location.pathname === "/" || window.location.pathname === "/index.html") && window.innerWidth > 1024)  {
+  const header = document.getElementById('header');
+  console.log('girdi', header)
+  header.style.opacity = 0;
+
+  document.addEventListener('scroll', () => {
+    header.style.opacity = 1;
+  })
+
+  setTimeout(() => {
+    header.style.opacity = 1;
+  }, 4000);
+} else {
+  header.style.opacity =  1;
+}
+document.querySelector("body").classList.add("loaded");
+
 (function ($) {
   "use strict";
-
-  if(window.location.pathname === "/" && window.innerWidth > 1024)  {
-    $("#header").css('opacity', 0);
-
-    document.addEventListener('scroll', () => {
-      $('#header').css('opacity', 1);
-      
-    })
-
-    setTimeout(() => {
-      $("#header").css('opacity', 1);
-    }, 4000);
-  } else {
-    $("#header").css('opacity', 1);
-  }
-  document.querySelector("body").classList.add("loaded");
   firstInteraction();
 
   var userInteracted = false;
@@ -180,43 +182,3 @@
     }
   });
 })(jQuery);
-
-var dropdown = document.querySelectorAll('.dropdown');
-
-dropdown.forEach((a) => a.addEventListener('mouseenter', (e) => {
-  e.target.querySelector('.dropdown-menu').classList.add('show');
-}))
-
-
-dropdown.forEach((a) => a.addEventListener('mouseleave', (e) => {
-  e.target.querySelector('.dropdown-menu').classList.remove('show');
-}))
-
-
-var customDropdown = document.querySelectorAll('.custom-dropdown');
-
-customDropdown.forEach((a) => a.addEventListener('mouseenter', (e) => {
-  e.target.querySelector('.custom-dropdown-menu').classList.add('show');
-}));
-
-
-customDropdown.forEach((a) => a.addEventListener('mouseleave', (e) => {
-  e.target.querySelector('.custom-dropdown-menu').classList.remove('show');
-}));
-const videoContainers =
-document.getElementsByClassName("video-container");
-
-for (let i = 0; i < videoContainers.length; i++) {
-const container = videoContainers[i];
-const video = container.querySelector("video"); // Video elemanını bul
-
-container.addEventListener("mouseover", () => {
-  video.currentTime = 0;
-  video.play();
-  video.loop = true;
-});
-
-container.addEventListener("mouseleave", () => {
-  video.pause();
-});
-}
