@@ -21,21 +21,20 @@
     <meta property="og:url" content="https://www.postify.app/" />
     <meta property="og:site_name" content="Postify" />
     <meta property="article:modified_time" content="2023-06-19T17:29:03+00:00" />
-    <meta property="og:image" content="/images/Dashboard.svg" />
+    <meta property="og:image" content="/images/Dashboard.webp" />
     <meta property="og:image:width" content="1440" />
     <meta property="og:image:height" content="892" />
     <meta property="og:image:type" content="image/svg" />
-    
-    <link rel="preload" href="/media/dashboard_video.mp4" as="video">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="stylesheet" id="fonts-css" href="/css/fonts.css" media="all" />
     <link rel="stylesheet" id="style-css" href="/css/style.css" media="all"/>
     <link rel="stylesheet" id="bootstrap-css" href="/css/bootstrap.min.css" media="all"/>
     <link rel="stylesheet" id="flickity-css" href="/css/flickity.css" media="all" />
     <link rel="stylesheet" id="core-css" href="/css/postify-core.css" media="all" />
-    <link rel="icon" href="/images/amblem.svg"  />
-    <link rel="icon"href="/images/amblem.svg" sizes="192x192"/>
-    <link rel="apple-touch-icon" href="/images/amblem.svg" />
+    <link rel="icon" href="/images/amblem.ai"  />
+    <link rel="icon"href="/images/amblem.ai" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="/images/amblem.ai" />
+    <script src="/js/postify-lazy-scripts.js"></script>
   </head>
   <body
     class="page d-flex flex-column no-webp layout group-blog unknown-os unknown-browser">
@@ -170,7 +169,7 @@
                   target="_self"
                   rel="follow"
                 >
-                  <img src="/fonts/PostifyL.svg" alt="" />
+                  <img src="/fonts/PostifyL.webp" alt="" />
                 </a>
               </div>
 
@@ -226,7 +225,7 @@
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/publish.png"
+                                src="/images/publish.webp"
                                 alt=""
                               />
 
@@ -245,7 +244,7 @@
                                                           <img
                                                             height="30px"
                                                             width="30px"
-                                                            src="/images/analiz.png"
+                                                            src="/images/analiz.webp"
                                                             alt=""
                                                           />
 
@@ -266,7 +265,7 @@
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/Plan.png"
+                                src="/images/Plan.webp"
                                 alt=""
                               />
 
@@ -284,7 +283,7 @@
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/ai.png"
+                                src="/images/ai.webp"
                                 alt=""
                               />
 
@@ -339,7 +338,7 @@
                                 <img
                                   height="30px"
                                   width="30px"
-                                  src="/images/instagramm.png"
+                                  src="/images/instagramm.webp"
                                   alt=""
                                 />
 
@@ -357,7 +356,7 @@
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/facebook-navbar.png"
+                                src="/images/facebook-navbar.webp"
                                 alt=""
                               />
 
@@ -378,7 +377,7 @@
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/twitterr.png"
+                                src="/images/twitterr.webp"
                                 alt=""
                               />
 
@@ -388,23 +387,23 @@
                             </a> 
                             </div>
                             
-<div  class="navbar_child">
- <a
+                          <div  class="navbar_child">
+                          <a
                               href="/chanels/linkedin/"
                               class=" d-flex align-items-center"
                             >
                               <img
                                 height="30px"
                                 width="30px"
-                                src="/images/linkedin-navbar.png"
+                                src="/images/linkedin-navbar.webp"
                                 alt=""
                               />
 
                               <div class="custom-dropdown-item">
                                 <strong>Linkedln </strong>
                               </div>
-</a>
-</div>
+                          </a>
+                          </div>
                            
                           </div>
                         </div>
@@ -468,7 +467,9 @@
           </nav>
         </div>
       </header>
+
       <main class="">
+
         <div class="container-fluid">
           <h1
             class="has-gradient text-center text-dark-1 mt-50 mb-50 mw-100 line-1"
@@ -548,84 +549,30 @@
              1496 l0 1496 41 83 c76 153 77 302 3 454 -103 209 -352 324 -574 265z"/>
              </g>
              </svg>
-              No card required</p>
+              No card required
+            </p>
           </div>
-          <div
-            class="postify-pricing postify-pricing--short postify-pricing--flat mt-50 mt-lg-100"
+       
+          <div class="postify-pricing postify-pricing--short postify-pricing--flat mt-50 mt-lg-100"
             id="postify-pricing"
           >
             <div class="container p-0">
               <div class="postify-pricing-plans">
-                <div class="row">
+                <div class="row justify-content-center">
                   <div class="col-lg-6 pe-lg-4  mb-4">
-                    <div class="postify-pricing-plan bg-primary flex-grow-1">
+                    <div style="background-color: #3833C2;" class="postify-pricing-plan flex-grow-1">
+                      <p style="opacity: 0.7;"
+                      class="postify-pricing-plan-description text-center font-medium text-white  "
+                    >
+                    Monthly
+                      </p>
                       <h2
                         class="postify-pricing-plan-title text-center font-medium text-white"
-                        v-html="strings.starter"
-                      >
-                      Free
-                      </h2>
-                      <p
-                        class="postify-pricing-plan-description text-center font-medium text-white mb-5"
-                        v-html="strings.starterDescription"
-                      >
-                      For individuals and businesses getting started with social media.
-                      </p>
-                      <p class="mb-0 text-center text-white">
-                        <strong
-                          class="postify-pricing-plan-price font-medium"
-                         
-                          >$0</strong
-                        >
-                      </p>
-                    
-
-                       <ul class="mx-auto my-5 p-0">
-                        <li
-                          class="d-flex align-items-start text-white mb-4">
-                          <p class="mb-0">
-                            <strong class="font-medium">
-                              3 Social Profiles
-                            </strong>
-                            
-                          </p>
-                        </li>
-                        <li
-                          class="d-flex align-items-start text-white mb-4">
-                          <p class="mb-0">
-                            <strong class="font-medium">
-                              1 team member for collaboration
-                            </strong>
-                            
-                          </p>
-                        </li>
-                      </ul>
-                      <p class="mb-4">
-                        <a
-                          class="d-block btn btn-outline-primary w-100 mb-2 mx-auto"
-                          href="https://social.postify.app"
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          v-html="strings.signup"
-                          data-wpel-link="internal"
-                        >
-                        Get started
-                        </a>
-                      </p>
-                    
-                    </div>
-                  </div>
-                  <div class="col-lg-6 pe-lg-4  mb-4">
-                    <div class="postify-pricing-plan bg-primary flex-grow-1">
-                      <h2
-                        class="postify-pricing-plan-title text-center font-medium text-white"
-                       
                       >
                       Professional
                       </h2>
                       <p
                         class="postify-pricing-plan-description text-center font-medium text-white mb-5"
-                        v-html="strings.starterDescription"
                       >
                       For professional who want unlimited social profiles and collaboration.
                       </p>
@@ -634,12 +581,65 @@
                           class="postify-pricing-plan-price font-medium"
                          
                           >$49/mo</strong
-                          
                         >
-                        
                       </p>
-                     
-
+                      <ul class="mx-auto my-5 p-0">
+                        <li
+                          class="d-flex align-items-start text-white mb-4">
+                          <p class="mb-0">
+                            <strong class="font-medium">
+                              Unlimited Social Profiles
+                            </strong>
+                          </p>
+                        </li>
+                        <li
+                          class="d-flex align-items-start text-white mb-4">
+                          <p class="mb-0">
+                            <strong class="font-medium">
+                              Unlimited Collaboration
+                            </strong>
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="mb-4">
+                        <a
+                          class="d-block btn btn-outline-primary w-100 mb-2 mx-auto"
+                          href="https://social.postify.app/auth/register"
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                        >
+                        Start free for 14-day 
+                        </a>
+                      </p>
+                      <p style="margin-top: 30px;"
+                      class="postify-pricing-plan-description text-center font-medium text-white "
+                    >
+                    ALL FEATURES INCLUDED
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 pe-lg-4  mb-4 ">
+                    <div style="background-color: #3833C2;"  class="postify-pricing-plan  flex-grow-1 box">
+                      <div class="ribbon-2">
+                        Sale 16% off
+                      </div>
+                      
+                      <p style="opacity: 0.7;" class="postify-pricing-plan-description text-center font-medium text-white">
+                      Yearly
+                      </p>
+                      <h2
+                        class="postify-pricing-plan-title text-center font-medium text-white">
+                        Professional
+                      </h2>
+                      <p class="postify-pricing-plan-description text-center font-medium text-white mb-5">
+                        For professional who want unlimited social profiles and collaboration.
+                      </p>
+                      <p class="mb-0 text-center text-white">
+                        <strong
+                          class="postify-pricing-plan-price font-medium">
+                          $41/mo
+                        </strong>
+                      </p>
                        <ul class="mx-auto my-5 p-0">
                         <li
                           class="d-flex align-items-start text-white mb-4"
@@ -665,7 +665,7 @@
                       <p class="mb-4">
                         <a
                           class="d-block btn btn-outline-primary w-100 mb-2 mx-auto"
-                          href="https://social.postify.app"
+                          href="https://social.postify.app/auth/register"
                           target="_blank"
                           rel="nofollow noopener noreferrer"
                           v-html="strings.signup"
@@ -674,256 +674,800 @@
                         Start free for 14-day 
                         </a>
                       </p>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-   
-          <div id="faq" >
-              <h2 class="has-text-align-center text-center mb-50" id="h-faq">
-            FAQ
-          </h2>
-          <div class="postify-faq mt-100 mb-100 d-flex justify-content-center align-items-center">
-            <div style="width: 80%; " class=" p-0">
-              <div  class="accordion" id="postify-accordion-64510cbdc351e">
-                <div class="accordion-item">
-                  <h4
-                    class="accordion-header"
-                    id="postify-heading-64510cbdc351e-0"
-                  >
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#postify-collapse-64510cbdc351e-0"
-                      aria-expanded="true"
-                      aria-controls="postify-collapse-64510cbdc351e-0"
+                      <p style="margin-top: 30px;"
+                      class="postify-pricing-plan-description text-center font-medium text-white "
                     >
-                      <span>What can I do with the Postify app??</span>
-                    </button>
-                  </h4>
-                  <div
-                    id="postify-collapse-64510cbdc351e-0"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="postify-heading-64510cbdc351e-0"
-                    data-bs-parent="#postify-accordion-64510cbdc351e"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        With Postify, you can manage your social media accounts,
-                        review analytics such as follower count and engagement
-                        rates, schedule posts, and create post content with
-                        artificial intelligence.
+                    ALL FEATURES INCLUDED
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h4
-                    class="accordion-header"
-                    id="postify-heading-64510cbdc351e-1"
-                  >
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#postify-collapse-64510cbdc351e-1"
-                      aria-expanded="false"
-                      aria-controls="postify-collapse-64510cbdc351e-1"
-                    >
-                      <span
-                        >How do I determine when to share my posts in the
-                        Postify app?</span
-                      >
-                    </button>
-                  </h4>
-                  <div
-                    id="postify-collapse-64510cbdc351e-1"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="postify-heading-64510cbdc351e-1"
-                    data-bs-parent="#postify-accordion-64510cbdc351e"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        You can determine when your post will be shared by
-                        selecting the posting time type while creating a post.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h4
-                    class="accordion-header"
-                    id="postify-heading-64510cbdc351e-2"
-                  >
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#postify-collapse-64510cbdc351e-2"
-                      aria-expanded="false"
-                      aria-controls="postify-collapse-64510cbdc351e-2"
-                    >
-                      <span
-                        >How do I reply to inbox messages in the Postify app?
-                      </span>
-                    </button>
-                  </h4>
-                  <div
-                    id="postify-collapse-64510cbdc351e-2"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="postify-heading-64510cbdc351e-2"
-                    data-bs-parent="#postify-accordion-64510cbdc351e"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        <span style="font-weight: 400"
-                          >By viewing the messages in the inbox, you can reply
-                          directly from the app.
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h4
-                    class="accordion-header"
-                    id="postify-heading-64510cbdc351e-3"
-                  >
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#postify-collapse-64510cbdc351e-3"
-                      aria-expanded="false"
-                      aria-controls="postify-collapse-64510cbdc351e-3"
-                    >
-                      <span
-                        >How does artificial intelligence in the Postify app
-                        create content?</span
-                      >
-                    </button>
-                  </h4>
-                  <div
-                    id="postify-collapse-64510cbdc351e-3"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="postify-heading-64510cbdc351e-3"
-                    data-bs-parent="#postify-accordion-64510cbdc351e"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        <span style="font-weight: 400"
-                          >The artificial intelligence in the Postify app uses
-                          keywords you specify, brand name and other
-                          customization options to create relevant and
-                          interactive content for the social media platforms you
-                          choose.</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h4
-                    class="accordion-header"
-                    id="postify-heading-64510cbdc351e-4"
-                  >
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#postify-collapse-64510cbdc351e-4"
-                      aria-expanded="false"
-                      aria-controls="postify-collapse-64510cbdc351e-4"
-                    >
-                      <span
-                        >How long does it take to create content with artificial
-                        intelligence in the Postify app?</span
-                      >
-                    </button>
-                  </h4>
-                  <div
-                    id="postify-collapse-64510cbdc351e-4"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="postify-heading-64510cbdc351e-4"
-                    data-bs-parent="#postify-accordion-64510cbdc351e"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        <span style="font-weight: 400"
-                          >The AI content creation process in the Postify app
-                          typically takes a few seconds to a few minutes,
-                          depending on the customization options you specify and
-                          the type of content you want.</span
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
 
-          <!-- cta section  -->
-          <div style="margin-top: 100px;" class="postify-cta ">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="postify-features-table-wrapper mt-lg-100">
             <div class="container p-0">
-              <div class="postify-cta-wrapper">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <h2 class="mb-30">Postify, just <br> one click away</h2>
+              <div class="postify-features-table">
+                <div class="postify-features-header d-none d-lg-block">
+                 <div class="row align-items-center">
+                  <div class="col-lg-4 ps-lg-2">
+                    <h3 class="postify-features-header-title mb-0">Compare plans &amp; features</h3>
+                  </div>
+                  <div class="col-lg-4 px-lg-5">
+                    <div class="postify-features-header-option">
+                      <p style="opacity: 0.7;"
+                      class="postify-pricing-plan-description text-center font-medium text-black">
+                        Monthly
+                      </p>
+                    <p class="postify-features-header-option-title text-center mb-20 font-medium">
+                      Professional Plan
+                    </p>
+                   
+                 <p class="mb-0">
+                  <a class="d-block btn btn-primary w-100 mb-2 mx-auto" href="https://social.postify.app/auth/register" title="Start for free" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="internal">
+                    Start free for 14-day 
+                  </a>
+                </p>
+               
+                    </div>
+                  </div>
+                  <div class="col-lg-4 px-lg-5">
+                   <div class="postify-features-header-option">
+                    <p style="opacity: 0.7;"
+                    class="postify-pricing-plan-description text-center font-medium text-black">
+                      Monthly
+                    </p>
+                      <p class="postify-features-header-option-title text-center font-medium">Professional Plan</p>
+                     
+                      <p class="mb-0">
+                      <a class="d-block btn btn-outline-primary w-100 mb-2 mx-auto" href="https://social.postify.app/auth/register" title="Get a demo" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="internal">
+                        Start free for 14-day  </a>
+                      </p>
+                      
+                    </div>
+                    </div>
+                 </div>
+                </div>
+                <!-- Basics -->
+                  <div class="postify-features-section">
+                    <div class="postify-features-heading">
+                    <h4 class="postify-features-heading-title font-medium">
+                    Basics
+                  </h4>
+                    </div>
+                    <div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                          <p class="mb-0 font-medium text-heading text-dark-2">
+                            Price
+                          </p>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                          <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                            <p class="mb-0 font-medium text-center d-flex justify-content-center ">
+                              <span style="font-size: 30px;">$49</span>
+                            </p>
+                          </div>
+                        
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-center d-flex  justify-content-center">
+                                <span style="font-size: 30px;">$41</span>
+                              </p>
+                            </div>
+                          
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="postify-features-item">
+                      <div class="row align-items-center">
+                      <div class="col-4">
+                      <p class="mb-0 has-gradient font-medium text-heading text-dark-2">
+                      <strong>
+                        Discount
+                      </strong>
+                      </p>
+                      </div>
+                      <div class="col-4 ps-lg-5 mb-0">
+                      <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                        <p class="mb-0 font-medium text-heading d-flex justify-content-center">
+                          <span class="">-</span>
+                        </p>
+                      </div>
+                      <div class="postify-features-item-row postify-features-item-row--unlimited d-none d-lg-none">
                     
-                    <div class="mb-0 d-flex">
-                      <div class="">
-                        <a
-                        class="btn btn-light me-3"
-                        href="https://social.postify.app/auth/login"
-                        title="Start for free"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        data-wpel-link="internal"
-                      >
-                        Start for free
-                      </a> 
-                      <p style="color: white;margin-top: 15px;">
-                        <img src="/fonts/305555-ffffff.svg" alt="">
-                        14-day free trial</p>
+                      </div>
+                      </div>
+                      <div class="col-4 ps-lg-5 mb-0">
+                        <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                          <p class="mb-0 font-medium text-center d-flex justify-content-center">
+                            <span style="font-size: 30px;">$16</span>
+                          </p>
+                        </div>
+                      
+                        </div>
+                    
+                      </div>
+                      </div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                              Social Profiles
+                            </p>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                              Collaboration
+                            </p>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                              Scheduling Posts
+                            </p>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="unlimited">Unlimited</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Channels -->
+                  <div class="postify-features-section">
+                  <div class="postify-features-heading">
+                  <h4 class="postify-features-heading-title font-medium">
+                    Channels
+                   </h4>
+                  </div>
+                  <div>
+                    <div class="postify-features-item">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <p class="mb-0 font-medium text-heading text-dark-2">
+                            <img height="20" width="20" style="margin-right:5px;" src="/images/instagramm.webp" alt="">  Instagram  
+                          </p>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                              <span class="included">Included</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                <span class="included">Included</span>
+                              </p>
+                            </div>
+                          
+                          </div>
+                      </div>
+                    </div>
+                    <div class="postify-features-item">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <p class="mb-0 font-medium   text-heading text-dark-2">
+                            <img height="20" width="20" style="margin-right:5px;" src="/images/facebook-navbar.webp" alt="">  Facebook 
+                          </p>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                              <span class="included">Included</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                <span class="included">Included</span>
+                              </p>
+                            </div>
+                          
+                          </div>
+                      </div>
+                    </div>
+                    <div class="postify-features-item">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <p class="mb-0 font-medium text-heading text-dark-2">
+                            <img height="20" width="20" style="margin-right:5px;" src="/images/twitterr.webp" alt="">   Twitter
+                          </p>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                              <span class="included">Included</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                <span class="included">Included</span>
+                              </p>
+                            </div>
+                          
+                          </div>
+                      </div>
+                    </div>
+                    <div class="postify-features-item">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <p class="mb-0 font-medium text-heading text-dark-2">
+                            <img height="20" width="20" style="margin-right:5px;" src="/images/linkedin-navbar.webp" alt="">    LinkedIn
+                          </p>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                              <span class="included">Included</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-4 ps-lg-5 mb-0">
+                            <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                              <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                <span class="included">Included</span>
+                              </p>
+                            </div>
+                          
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                   <!-- AI Content -->
+                   <div class="postify-features-section">
+                    <div class="postify-features-heading">
+                    <h4 class="postify-features-heading-title font-medium">
+                      AI Content
+                     </h4>
+                    </div>
+                    <div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                             - Descriptions
+                            </p>
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                            - Hashtags
+                            </p>
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                             - Images
+                            </p>
+                            </div>
+                           
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="included">Included</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="included">Included</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <!-- Publisher -->
+                   <div class="postify-features-section">
+                    <div class="postify-features-heading">
+                    <h4 class="postify-features-heading-title font-medium">
+                      Publisher
+                     </h4>
+                    </div>
+                    <div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                             - Content Scheduling
+                            </p>
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                            - Automatically Publishing
+                            </p>
+                            </div>
+                           
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="included">Included</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="included">Included</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                    <!-- Analytics -->
+                    <div class="postify-features-section">
+                      <div class="postify-features-heading">
+                      <h4 class="postify-features-heading-title font-medium">
+                        Analytics
+                       </h4>
                       </div>
                       <div>
-                          <a
-                        class="btn btn-outline-light"
-                        href="/pricing/"
-                        title="View pricing"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                      >
-                        View pricing
-                      </a>
-                      <p style="color: white;margin-top: 15px;">
-                        <img src="/fonts/1976101-ffffff.svg" alt="">
-                        No card required</p>
+                        <div class="postify-features-item">
+                          <div class="row align-items-center">
+                            <div class="col-4">
+                              <p class="mb-0 font-medium text-heading text-dark-2">
+                               - Real Time Insights
+                              </p>
+                              <p class="mb-0 font-medium text-heading text-dark-2">
+                              - Automated Reporting
+                              </p>
+                              </div>
+                             
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                  <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                    <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              
+                              </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>   
+                     </div>
+                      <!-- Collaboration -->
+                    <div class="postify-features-section">
+                      <div class="postify-features-heading">
+                      <h4 class="postify-features-heading-title font-medium">
+                        Collaboration
+                       </h4>
+                      </div>
+                      <div>
+                        <div class="postify-features-item">
+                          <div class="row align-items-center">
+                            <div class="col-4">
+                              <p class="mb-0 font-medium text-heading text-dark-2">
+                               - Inviting team members
+                              </p>
+                              <p class="mb-0 font-medium text-heading text-dark-2">
+                              - Assignment Tags
+                              </p>
+                              </div>
+                             
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                  <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                    <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                      <!-- Inbox -->
+                    <div class="postify-features-section">
+                      <div class="postify-features-heading">
+                      <h4 class="postify-features-heading-title font-medium">
+                        Inbox
+                       </h4>
+                      </div>
+                      <div>
+                        <div class="postify-features-item">
+                          <div class="row align-items-center">
+                            <div class="col-4">
+                              <p class="mb-0 font-medium text-heading text-dark-2">
+                               - Multiple networks in one inbox
+                              </p>
+                              </div>
+                             
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                  <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-4 ps-lg-5 mb-0">
+                                <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                  <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                    <span class="included">Included</span>
+                                  </p>
+                                </div>
+                              
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                      <!-- Support -->
+                    <div class="postify-features-section">
+                    <div class="postify-features-heading">
+                    <h4 class="postify-features-heading-title font-medium">
+                      Support
+                     </h4>
+                    </div>
+                    <div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                              Live chat hours 
+                            </p>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="">8 am - 8 pm GMT</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="">8 am - 8 pm GMT</span>
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="postify-features-item">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <p class="mb-0 font-medium text-heading text-dark-2">
+                              Email Support
+                            </p>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex justify-content-center ">
+                                <span class="included">Included</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 ps-lg-5 mb-0">
+                              <div class="postify-features-item-row postify-features-item-row--starter d-lg-block">
+                                <p class="mb-0 font-medium text-heading d-flex  justify-content-center">
+                                  <span class="included">Included</span>
+                                </p>
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+          </div>
+
+          <div id="faq" >
+            <h2 class="has-text-align-center text-center mb-50 mt-100" id="h-faq">
+              FAQ
+            </h2>
+            <div class="postify-faq mt-100 mb-100 d-flex justify-content-center align-items-center">
+              <div style="width: 80%; " class=" p-0">
+                <div  class="accordion" id="postify-accordion-64510cbdc351e">
+                  <div class="accordion-item">
+                    <h4
+                      class="accordion-header"
+                      id="postify-heading-64510cbdc351e-0"
+                    >
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#postify-collapse-64510cbdc351e-0"
+                      >
+                        <span>What can I do with the Postify app?</span>
+                      </button>
+                    </h4>
+                    <div
+                      id="postify-collapse-64510cbdc351e-0"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="postify-heading-64510cbdc351e-0"
+                      data-bs-parent="#postify-accordion-64510cbdc351e"
+                      id="collapseExample"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          With Postify, you can manage your social media accounts,
+                          review analytics such as follower count and engagement
+                          rates, schedule posts, and create post content with
+                          artificial intelligence.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="cover">
-                  <img
-                    alt="Get started with Postify"
-                    width="581"
-                    height="627"
-                    src="/images/Dashboard.svg"
-                    class=""
-                  />
+                  <div class="accordion-item">
+                    <h4
+                      class="accordion-header"
+                      id="postify-heading-64510cbdc351e-1"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#postify-collapse-64510cbdc351e-1"
+                        aria-expanded="false"
+                        aria-controls="postify-collapse-64510cbdc351e-1"
+                      >
+                        <span
+                          >How do I determine when to share my posts in the
+                          Postify app?</span
+                        >
+                      </button>
+                    </h4>
+                    <div
+                      id="postify-collapse-64510cbdc351e-1"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="postify-heading-64510cbdc351e-1"
+                      data-bs-parent="#postify-accordion-64510cbdc351e"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You can determine when your post will be shared by
+                          selecting the posting time type while creating a post.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4
+                      class="accordion-header"
+                      id="postify-heading-64510cbdc351e-2"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#postify-collapse-64510cbdc351e-2"
+                        aria-expanded="false"
+                        aria-controls="postify-collapse-64510cbdc351e-2"
+                      >
+                        <span
+                          >How do I reply to inbox messages in the Postify app?
+                        </span>
+                      </button>
+                    </h4>
+                    <div
+                      id="postify-collapse-64510cbdc351e-2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="postify-heading-64510cbdc351e-2"
+                      data-bs-parent="#postify-accordion-64510cbdc351e"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <span style="font-weight: 400"
+                            >By viewing the messages in the inbox, you can reply
+                            directly from the app.
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4
+                      class="accordion-header"
+                      id="postify-heading-64510cbdc351e-3"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#postify-collapse-64510cbdc351e-3"
+                        aria-expanded="false"
+                        aria-controls="postify-collapse-64510cbdc351e-3"
+                      >
+                        <span
+                          >How does artificial intelligence in the Postify app
+                          create content?</span
+                        >
+                      </button>
+                    </h4>
+                    <div
+                      id="postify-collapse-64510cbdc351e-3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="postify-heading-64510cbdc351e-3"
+                      data-bs-parent="#postify-accordion-64510cbdc351e"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <span style="font-weight: 400"
+                            >The artificial intelligence in the Postify app uses
+                            keywords you specify, brand name and other
+                            customization options to create relevant and
+                            interactive content for the social media platforms you
+                            choose.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h4
+                      class="accordion-header"
+                      id="postify-heading-64510cbdc351e-4"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#postify-collapse-64510cbdc351e-4"
+                        aria-expanded="false"
+                        aria-controls="postify-collapse-64510cbdc351e-4"
+                      >
+                        <span
+                          >How long does it take to create content with artificial
+                          intelligence in the Postify app?</span
+                        >
+                      </button>
+                    </h4>
+                    <div
+                      id="postify-collapse-64510cbdc351e-4"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="postify-heading-64510cbdc351e-4"
+                      data-bs-parent="#postify-accordion-64510cbdc351e"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <span style="font-weight: 400"
+                            >The AI content creation process in the Postify app
+                            typically takes a few seconds to a few minutes,
+                            depending on the customization options you specify and
+                            the type of content you want.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
+
+        <!-- cta section  -->
+        <div style="margin-top: 100px; " class="postify-cta ">
+          <div class="container p-0">
+            <div class="postify-cta-wrapper">
+              <div class="row">
+                <div class="col-xl-6">
+                  <h2 class="mb-30">Postify, just <br> one click away</h2>
+                  
+                  <div class="mb-0 d-flex">
+                    <div class="">
+                      <a
+                      class="btn btn-light me-3"
+                      href="https://social.postify.app/auth/register"
+                      title="Start for free"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      data-wpel-link="internal"
+                    >
+                      Start for free
+                    </a> 
+                    <p style="color: white;margin-top: 15px;">
+                      <img src="/fonts/305555-ffffff.webp" alt="">
+                      14-day free trial</p>
+                    </div>
+                    <div>
+                        <a
+                      class="btn btn-outline-light"
+                      href="/pricing/"
+                      title="View pricing"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                    >
+                      View pricing
+                    </a>
+                    <p style="color: white;margin-top: 15px;">
+                      <img src="/fonts/1976101-ffffff.webp" alt="">
+                      No card required</p>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+              <div class="cover">
+                <img
+                  alt="Get started with Postify"
+                  width="581"
+                  height="627"
+                  src="/images/Dashboard.webp"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
     <footer id="footer">
@@ -942,7 +1486,7 @@
                   <img
                     height="60"
                     width="200"
-                    src="/images/postify_white.png"
+                    src="/images/postify_white.webp"
                     alt=""
                   />
                 </a>
@@ -977,7 +1521,7 @@
                     <img
                     
                       class="skip-lazy"
-                      src="/fonts/instagram.svg"
+                      src="/fonts/instagram.webp"
                       alt="Instagram"
                       width="24"
                       height="24"
@@ -994,7 +1538,7 @@
                   >
                     <img
                       class="skip-lazy"
-                      src="/fonts/linkedin.svg"
+                      src="/fonts/linkedin.webp"
                       alt="LinkedIn"
                       width="24"
                       height="24"
@@ -1011,7 +1555,7 @@
                   >
                     <img
                       class="skip-lazy"
-                      src="/fonts/twitter.svg"
+                      src="/fonts/twitter.webp"
                       alt="Twitter"
                       width="24"
                       height="24"
@@ -1169,17 +1713,15 @@
       </div>
     </footer>
 
-    <script src="/js/postify-lazy-scripts.js" type="0d64ef34186e113f922cddf1-text/javascript"></script>
-    <script src="/js/jquery.min.js" id="jquery-core-js" type="0d64ef34186e113f922cddf1-text/javascript" preload></script>
-    <script src="/js/ScrollMagic.min.js" id="postify-scrollMagic-js" type="0d64ef34186e113f922cddf1-text/javascript"></script>
-    <script src="/js/homepage.js" id="postify-homepage-js" type="0d64ef34186e113f922cddf1-text/javascript"></script>
-    
-    <script src="/js/yakup.js" id="postify-script-js"  type="0d64ef34186e113f922cddf1-text/javascript" async></script>
-    
-    
-    <script src="/js/flickity.pkgd.min.js" id="postify-flickity-js" type="0d64ef34186e113f922cddf1-text/javascript"></script>
-    <script src="/js/jquery.scrollTo.min.js" id="postify-scrollTo-js" type="0d64ef34186e113f922cddf1-text/javascript"></script>
-    <script src="/js/rocket-loader.min.js" data-cf-settings="0d64ef34186e113f922cddf1-|49" defer ></script>
-    <script src="/js/jquery-migrate.min.js" id="jquery-migrate-js"  type="0d64ef34186e113f922cddf1-text/javascript" ></script>
+    <script src="/js/jquery.min.js" id="jquery-core-js" preload async></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/ScrollMagic.min.js" id="postify-scrollMagic-js"></script>
+    <script src="/js/flickity.pkgd.min.js" id="postify-flickity-js"></script>
+    <script src="/js/jquery.scrollTo.min.js" id="postify-scrollTo-js"></script>
+    <script src="/js/rocket-loader.min.js"></script>
+    <script src="/js/jquery-migrate.min.js" id="jquery-migrate-js" ></script>
+    <script src="/js/homepage.js" id="postify-homepage-js"></script>   
+    <script src="/js/yakup.js" id="postify-script-js" async></script> 
+   
   </body>
 </html>
