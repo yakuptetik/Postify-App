@@ -1,0 +1,21 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^postify\.app$ [NC]
+RewriteRule ^(.*)$ http://www\.postify\.app/$1 [L,R=301]
+
+# Erişilebilirlik açısından dizin endekslemesini devre dışı bırakın
+Options -Indexes
+
+# URL yeniden yazma kuralları
+
+# Tüm istekleri www.yourdomain.com/index.html yerine www.yourdomain.com/ yönlendirin
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://yourdomain.com/ [R=301,L]
+
+# .html uzantılarını kaldırın
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ $1.html [L]
+
+# 404 hatalarını yönlendirin
+ErrorDocument 404 /index.html
