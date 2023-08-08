@@ -42,578 +42,990 @@
  
 
     <div id="view" class="flex-grow-1">
-         <!-- mobil navbar -->
-         <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-              <div class="modal-content d-flex">
-                <div
-                  class="container flex-grow-1 d-flex align-items-center justify-content-center"
-                >
-                  <ul id="menu-main-menu" class="menu">
-                    <li class="nav-item">
+      <!-- mobil navbar -->
+      <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content d-flex">
+            <div
+              class="container flex-grow-1 d-flex align-items-center justify-content-center"
+            >
+              <ul id="menu-main-menu" class="menu">
+                <li class="nav-item">
+                  <a
+                    href="/"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    target="_self"
+                    rel="follow"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Home</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="featuresDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-                    <li class="nav-item">
-                      <div class="dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="featuresDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <!-- dropdown-toggle -->
-                            Product
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="featuresDropdown"
-                        >
-                          <a class="dropdown-item" href="/publish">Publisher </a>
-    
-                          <a class="dropdown-item" href="/analytics">Analytics</a>
-                          <a class="dropdown-item" href="/customer-engagement">Customer Engagement</a>
-                          <a class="dropdown-item" href="/ai-creativity">AI Content</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <div class="custom-dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="customFeaturesDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Channels
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="custom-dropdown-menu"
-                          aria-labelledby="customFeaturesDropdown"
-                        >
-                          <a class="custom-dropdown-item" href="/chanels/facebook/">Facebook</a>
-                          <a class="custom-dropdown-item" href="/chanels/instagram/">Instagram</a>
-                          <a class="custom-dropdown-item" href="/chanels/twitter/">Twitter</a>
-                          <a class="custom-dropdown-item" href="/chanels/linkedin/">LinkedIn</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
+                        <!-- dropdown-toggle -->
+                        Product
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="featuresDropdown"
+                    >
+                      <a class="dropdown-item" href="/publish">Publisher </a>
+
+                      <a class="dropdown-item" href="/analytics">Analytics</a>
+                      <a class="dropdown-item" href="/customer-engagement">Customer Engagement</a>
+                      <a class="dropdown-item" href="/ai-creativity">AI Content</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="custom-dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/pricing/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Pricing</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="customFeaturesDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-    
-                    <li class="d-lg-none w-100 btn btn-primary nav-item">
-                      <a
-                        target="_blank"
-                        rel="noopener follow"
-                        href="https://social.postify.app/auth/register"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        >Login</a
+                        Channels
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="custom-dropdown-menu"
+                      aria-labelledby="customFeaturesDropdown"
+                    >
+                      <a class="custom-dropdown-item" href="/chanels/facebook/">Facebook</a>
+                      <a class="custom-dropdown-item" href="/chanels/instagram/">Instagram</a>
+                      <a class="custom-dropdown-item" href="/chanels/twitter/">Twitter</a>
+                      <a class="custom-dropdown-item" href="/chanels/linkedin/">LinkedIn</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/pricing/"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    target="_self"
+                    rel="follow"
+                    >Pricing</a
+                  >
+                </li>
+
+                <li class="d-lg-none w-100 btn btn-primary nav-item">
+                  <a
+                    target="_blank"
+                    rel="noopener follow"
+                    href="https://social.postify.app/auth/register"
+                    class="nav-link"
+                    data-wpel-link="internal"
+                    >Login</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-          <header id="header" >
-            <div class="container-fluid">
-              <nav class="container p-0 navbar navbar-expand-lg align-items-center">
-                <div
-                  class="d-flex align-items-center justify-content-between w-100"
+        </div>
+      </div>
+      <header id="header" >
+        <div class="container-fluid">
+          <nav class="container p-0 navbar navbar-expand-lg align-items-center">
+            <div
+              class="d-flex align-items-center justify-content-between w-100"
+            >
+              <div class="">
+                <a
+                  href="/"
+                  title="Postify"
+                  data-wpel-link="internal"
+                  target="_self"
+                  rel="follow"
                 >
-                  <div class="">
+                  <img src="/fonts/Postify-logo.svg" alt="" />
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse justify-content-center">
+                <ul id="topmenu" class="navbar-nav align-items-center">
+                  <li class="nav-item">
                     <a
                       href="/"
-                      title="Postify"
+                      class="nav-link"
                       data-wpel-link="internal"
                       target="_self"
                       rel="follow"
+                      >Home</a
                     >
-                      <img src="/fonts/Postify-logo.svg" alt="" />
-                    </a>
-                  </div>
-    
-                  <div class="collapse navbar-collapse justify-content-center">
-                    <ul id="topmenu" class="navbar-nav align-items-center">
-                      <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                    <div class="custom-dropdown">
+                      <div class="d-flex align-items-center">
                         <a
-                          href="/"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
-                          >Home</a
+                          class="custom-dropdown-toggle nav-link"
+                          id="featuresDropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
                         >
-                      </li>
-                      <li class="nav-item">
-                        <div class="custom-dropdown">
-                          <div class="d-flex align-items-center">
-                            <a
-                              class="custom-dropdown-toggle nav-link"
-                              id="featuresDropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
-                            >
-                              <!-- dropdown-toggle -->
-                              Product
-                            </a>
-                            <svg
-                              fill="#525979"
-                              height="6"
-                              viewBox="0 0 11 7"
-                              width="11"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                                fill="#525979"
-                              />
-                            </svg>
-                          </div>
-    
-                          <div
-                            class="custom-dropdown-menu"
-                            aria-labelledby="featuresDropdown"
-                          >
-                            <div class="drop-menu">
-                              <div>
-                                <div class="navbar_child">
-                                <a
-                                  href="/publish"
-                                  class="d-flex align-items-center justify-content-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/publish.webp"
-                                    alt=""
-                                  />
-    
-                                  <div  class="custom-dropdown-item ">
-                                    <strong>Publisher</strong>
-                                    
-                                  </div>
-                                </a> 
-                                </div>
-                                                          
-                                <div class="navbar_child">
-                                  <a 
-                                    href="/analytics/"
-                                    class="d-flex align-items-center"
-                                  >
-                                    <img
-                                      height="30px"
-                                      width="30px"
-                                      src="/images/analiz.webp"
-                                      alt=""
-                                    />
+                          <!-- dropdown-toggle -->
+                          Product
+                        </a>
+                        <svg
+                          fill="#525979"
+                          height="6"
+                          viewBox="0 0 11 7"
+                          width="11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                            fill="#525979"
+                          />
+                        </svg>
+                      </div>
 
-                                    <div class="custom-dropdown-item">
-                                      <strong>Analytics</strong>
-                                      
-                                    </div>
-                                  </a>  
-                              </div>
-                              </div>
-                    
-                              <div>
-                                <div class="navbar_child ">
-                                  <a
-                                  href="/customer-engagement/"
-                                  class=" d-flex align-items-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/Plan.webp"
-                                    alt=""
-                                  />
-    
-                                  <div class="custom-dropdown-item">
-                                    <strong>Customer Engagement</strong>
-                                    
-                                  </div>
-                                </a>
-                                </div>
-                                <div class="navbar_child ">
-                                  <a style="margin-left: -5px;"
-                                  href="/ai-creativity/"
-                                  class=" d-flex align-items-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/ai.webp"
-                                    alt=""
-                                  />
-    
-                                  <div class="custom-dropdown-item">
-                                    <strong>AI  Content</strong>
-                                    
-                                  </div>
-                                </a>
-                                </div>                         
-                              </div>
-    
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="custom-dropdown">
-                          <div class="d-flex align-items-center">
+                      <div
+                        class="custom-dropdown-menu"
+                        aria-labelledby="featuresDropdown"
+                      >
+                        <div class="drop-menu">
+                          <div>
+                            <div class="navbar_child">
                             <a
-                              class="custom-dropdown-toggle nav-link"
-                              id="customFeaturesDropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
+                              href="/publish"
+                              class="d-flex align-items-center justify-content-center"
                             >
-                              Channels
-                            </a>
-                            <svg
-                              fill="#525979"
-                              height="6"
-                              viewBox="0 0 11 7"
-                              width="11"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                                fill="#525979"
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/publish.webp"
+                                alt=""
                               />
-                            </svg>
-                          </div>
-    
-                          <div
-                            class="custom-dropdown-menu"
-                            aria-labelledby="customFeaturesDropdown"
-                          >
-                            <div class="drop-menu">
-                              <div>
-                                <div  class="navbar_child">
-                                  <a
-                                    href="/chanels/instagram/"
-                                    class=" d-flex align-items-center"
-                                  >
-                                    <img
-                                      height="30px"
-                                      width="30px"
-                                      src="/images/instagram-navbar.svg"
-                                      alt=""
-                                    />
-    
-                                    <div class="custom-dropdown-item">
-                                      <strong>Instagram</strong>
-                                    </div>
-                                  </a> 
-                                </div>
+
+                              <div  class="custom-dropdown-item ">
+                                <strong>Publisher</strong>
                                 
-                                <div  class="navbar_child">
-                                  <a style="margin-left: -6px;"
-                                  href="/chanels/facebook/"
-                                  class="d-flex  align-items-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/facebook-navbar.svg"
-                                    alt=""
-                                  />
-    
-                                  <div class="custom-dropdown-item">
-                                    <strong>Facebook</strong>
-                                  </div>
-                                </a>
-                                </div>
-                                                          
                               </div>
-    
-                              <div>
-                                <div  class="navbar_child">
-                                 <a style="margin-left: -6px;"
-                                  href="/chanels/twitter/"
-                                  class=" d-flex align-items-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/twitter-navbar.svg"
-                                    alt=""
-                                  />
-    
-                                  <div class="custom-dropdown-item">
-                                    <strong> Twitter</strong>
-                                  </div>
-                                </a> 
-                                </div>
-                                
-                                <div  class="navbar_child">
-                                <a
-                                  href="/chanels/linkedin/"
-                                  class=" d-flex align-items-center"
-                                >
-                                  <img
-                                    height="30px"
-                                    width="30px"
-                                    src="/images/linkedin-navbar.svg"
-                                    alt=""
-                                  />
-    
-                                  <div class="custom-dropdown-item">
-                                    <strong>Linkedln </strong>
-                                  </div>
-                                </a>
-                                </div>
-                               
-                              </div>
+                            </a> 
                             </div>
+                                                      
+                            <div class="navbar_child">
+                              <a 
+                                href="/analytics/"
+                                class="d-flex align-items-center"
+                              >
+                                <img
+                                  height="30px"
+                                  width="30px"
+                                  src="/images/analiz.webp"
+                                  alt=""
+                                />
+
+                                <div class="custom-dropdown-item">
+                                  <strong>Analytics</strong>
+                                  
+                                </div>
+                              </a>  
+                          </div>
+                          </div>
+                
+                          <div>
+                            <div class="navbar_child ">
+                              <a
+                              href="/customer-engagement/"
+                              class=" d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/Plan.webp"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Customer Engagement</strong>
+                                
+                              </div>
+                            </a>
+                            </div>
+                            <div class="navbar_child ">
+                              <a style="margin-left: -5px;"
+                              href="/ai-creativity/"
+                              class=" d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/ai.webp"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>AI  Content</strong>
+                                
+                              </div>
+                            </a>
+                            </div>                         
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="custom-dropdown">
+                      <div class="d-flex align-items-center">
+                        <a
+                          class="custom-dropdown-toggle nav-link"
+                          id="customFeaturesDropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Channels
+                        </a>
+                        <svg
+                          fill="#525979"
+                          height="6"
+                          viewBox="0 0 11 7"
+                          width="11"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                            fill="#525979"
+                          />
+                        </svg>
+                      </div>
+
+                      <div
+                        class="custom-dropdown-menu"
+                        aria-labelledby="customFeaturesDropdown"
+                      >
+                        <div class="drop-menu">
+                          <div>
+                            <div  class="navbar_child">
+                              <a
+                                href="/chanels/instagram/"
+                                class=" d-flex align-items-center"
+                              >
+                                <img
+                                  height="30px"
+                                  width="30px"
+                                  src="/images/instagram-navbar.svg"
+                                  alt=""
+                                />
+
+                                <div class="custom-dropdown-item">
+                                  <strong>Instagram</strong>
+                                </div>
+                              </a> 
+                            </div>
+                            
+                            <div  class="navbar_child">
+                              <a style="margin-left: -6px;"
+                              href="/chanels/facebook/"
+                              class="d-flex  align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/facebook-navbar.svg"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Facebook</strong>
+                              </div>
+                            </a>
+                            </div>
+                                                      
+                          </div>
+
+                          <div>
+                            <div  class="navbar_child">
+                              <a style="margin-left: -6px;"
+                              href="/chanels/twitter/"
+                              class=" d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/twitter-navbar.svg"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong> Twitter</strong>
+                              </div>
+                            </a> 
+                            </div>
+                            
+                            <div  class="navbar_child">
+                            <a
+                              href="/chanels/linkedin/"
+                              class=" d-flex align-items-center"
+                            >
+                              <img
+                                height="30px"
+                                width="30px"
+                                src="/images/linkedin-navbar.svg"
+                                alt=""
+                              />
+
+                              <div class="custom-dropdown-item">
+                                <strong>Linkedln </strong>
+                              </div>
+                            </a>
+                            </div>
+                            
                           </div>
                         </div>
-                      </li>
-                      <li class="nav-item">
-                        <a
-                          href="/pricing/"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
-                          >Pricing</a
-                        >
-                      </li>
-                      <li class="d-lg-none w-100 btn btn-primary nav-item">
-                        <a
-                          target="_blank"
-                          rel="noopener follow"
-                          href="https://social.postify.app/auth/login"
-                          class="nav-link"
-                          data-wpel-link="internal"
-                          >Login</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="d-flex align-items-center">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
                     <a
+                      href="/pricing/"
+                      class="nav-link"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="d-lg-none w-100 btn btn-primary nav-item">
+                    <a
+                      target="_blank"
+                      rel="noopener follow"
                       href="https://social.postify.app/auth/login"
-                      class="d-none d-lg-inline-block btn btn-outline-primary me-10"
-                      title="Login"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
+                      class="nav-link"
                       data-wpel-link="internal"
+                      >Login</a
                     >
-                      Login
-                    </a>
-                    <a
-                      href="https://social.postify.app/auth/register"
-                      class="btn btn-primary"
-                      title="Start for free"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      data-wpel-link="internal"
-                    >
-                      Start for free
-                    </a>
-                    <button
-                      type="button"
-                      class="hamburger d-lg-none"
-                      data-bs-toggle="modal"
-                      data-bs-target="#mobileMenu"
-                    >
-                      <span class="hamburger-inner"></span>
-                      <span class="visually-hidden">Toggle menu</span>
-                    </button>
-                  </div>
-                </div>
-              </nav>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center">
+                <a
+                  href="https://social.postify.app/auth/login"
+                  class="d-none d-lg-inline-block btn btn-outline-primary me-10"
+                  title="Login"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-wpel-link="internal"
+                >
+                  Login
+                </a>
+                <a
+                  href="https://social.postify.app/auth/register"
+                  class="btn btn-primary"
+                  title="Start for free"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-wpel-link="internal"
+                >
+                  Start for free
+                </a>
+                <button
+                  type="button"
+                  class="hamburger d-lg-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mobileMenu"
+                >
+                  <span class="hamburger-inner"></span>
+                  <span class="visually-hidden">Toggle menu</span>
+                </button>
+              </div>
             </div>
-          </header>
+          </nav>
+        </div>
+      </header>
       <div class="">
         <div class=" text-center">
           <p  class="text-center ">
             <div style="padding:30px 0px;"
               class="">
-              <img height="65" width="250"  src="/images/facebook.webp" alt=""></div
-            >
+              <img height="50" width="180"  src="/images/facebook.webp" alt=""></div>
           </p>
           <h2 style="font-size: 50px;" class="has-gradient text-dark-1 mb-2 mb-lg-4">
-        
-             
-             Comprehensive <strong>Facebook</strong>  management and insights.
+            Comprehensive <strong>Facebook</strong>  management and insights.
           </h2>
           <p class="lead wide mb-30">
-            With over 2 billion daily active users, Facebook is a crowded space. Rise above the noise with our unique toolkit offering Facebook Page and Group post organization, scheduling, in-depth analytics, and user engagement tools - ensuring your message resonates with  Facebook's daily users.</p>
+            Stand out among Facebook's 2.8 billion active users by using our Social Media Management Software, offering features like AI Content, Inbox, Analytics, and Collaboration. Achieve perfect targeting and interaction with AI-supported content.
+          </p>
           <p class="text-center  mb-0">
             <a class="btn btn-primary me-3" href="https://social.postify.app/auth/register" title="Start for free" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="internal">
             Start for free </a>
             <a class="btn btn-outline-primary" href="/pricing/" title="View pricing" data-wpel-link="internal" target="_self" rel="follow">
             View pricing </a>
             </p>
-    
-          
-      
         </div>
       </div>
-      <!-- <main style="margin-top: 100px;"  class="content">
-        <div  class="">
-
+      <main class="content">
+        <div class="container-fluid">
           <div style="background: rgb(255,255,255);
-          background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(60,60,206,0.0970982142857143) 49%, rgba(255,255,255,1) 100%);"  class="postify-features mb-100">
-            <div  class="container p-0">
-              <div class="d-flex justify-content-center mx-auto">
-                
-                <div
-                  style="margin-bottom: 100px;
-                  display: flex;
-                  flex-flow: row;
-                  align-items: flex-start;"
-                  class="d-flex justify-content-between "
+          background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(60,60,206,0.0970982142857143) 49%, rgba(255,255,255,1) 100%);" class="postify-features mb-100">
+            <div class="container p-0">
+              <!-- brands -->
+              <div class="brand">
+                <div style="opacity: 0.6;margin-top: 60px;"
+                  class="row align-items-center   justify-content-center justify-content-lg-around"
                 >
-                  
-                <div  class=" col-lg-3 col-md-4  col-sm-6    p-2">
-                    <div class="d-flex ">
-                        <img width="80" height="80" 
-                            alt="Sharing"
-                            class="lazyload"
-                            src="/images/facebookdeneme.webp"
-                        />
-                    </div>
-                    <div style="padding-bottom: 15px; padding-top: 15px;">
-                        <strong >Schedule your content</strong>
-                    </div>
-                    
-                    <div
-                      class="flex-grow-1"
-                      style="background: transparent;"
-                    >
-                    Schedule Facebook posts directly to your Pages and Groups from one simple-to-use dashboard
-                    </div>
-                    
-                    
-                </div>
+                
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="ClicData"
+                      width="144"
+                      height="21"
+                      
+                      class="nones "
+                      src="/fonts/clicdata.webp"
+                      
+                    />
+                  </div>
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="Insense"
+                      width="84"
+                      height="27"
+                      
+                      class="nones "
+                      src="/fonts/insense.webp"
+                      
+                    />
+                  </div>
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="Podcast.co"
+                      width="134"
+                      height="27"
+                      
+                      class="nones "
+                      src="/fonts/podcastco.webp"
+                      
+                    />
+                  </div>
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="Talkative"
+                      width="110"
+                      height="25"
+                      
+                      class="nones "
+                      src="/fonts/talkative.webp"
+                      
+                    />
+                  </div>
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="Visme"
+                      width="123"
+                      height="27"
+                      
+                      class="nones "
+                      src="/fonts/visme.webp"
+                      
+                    />
+                  </div>
+                  <div
+                    class=" col-lg-auto px-4 mb-30 mb-lg-50 d-flex justify-content-center"
+                  >
+                    <img
+                      alt="Cloudbeds"
+                      width="143"
+                      height="26"
+                      class="nones "
+                      src="/fonts/Cloudbeds.webp"
+                      
+                    />
+                  </div>
 
-                
-                   
-                   <div  class="   col-lg-3 col-md-4  col-sm-6    p-2">
-                    <div class="d-flex ">
-                        <img 
-                            alt="Sharing"
-                            class="lazyload"
-                            src="/fonts/completed.webp"
-                        />
-                    </div>
-                    <div style="padding-bottom: 15px; padding-top: 15px;">
-                        <strong >Schedule your content</strong>
-                    </div>
-                    
-                    <div
-                      class="flex-grow-1"
-                      style="background: transparent;"
-                    >
-                    Schedule Facebook posts directly to your Pages and Groups from one simple-to-use dashboard
-                    </div>
-                    
-                    
                 </div>
-                  
-                <div  class="  col-lg-3 col-md-4  col-sm-6    p-2">
-                    <div class="d-flex ">
-                        <img 
-                            alt="Sharing"
-                            class="lazyload"
-                            src="/fonts/completed.webp"
-                        />
-                    </div>
-                    <div style="padding-bottom: 15px; padding-top: 15px;">
-                        <strong >Schedule your content</strong>
-                    </div>
-                    
-                    <div
-                      class="flex-grow-1"
-                      style="background: transparent;"
-                    >
-                    Schedule Facebook posts directly to your Pages and Groups from one simple-to-use dashboard
-                    </div>
-                    
-                    
-                </div>
-                
-                   
-                   <div   class=" col-lg-3  col-md-4  col-sm-6     p-2">
-                    <div class="d-flex ">
-                        <img 
-                            alt="Sharing"
-                            class="lazyload"
-                            src="/fonts/completed.webp"
-                        />
-                    </div>
-                    <div style="padding-bottom: 15px; padding-top: 15px;">
-                        <strong >Schedule your content</strong>
-                    </div>
-                    
-                    <div
-                      class="flex-grow-1"
-                      style="background: transparent;"
-                    >
-                    Schedule Facebook posts directly to your Pages and Groups from one simple-to-use dashboard
-                    </div>
-                    
-                    
-                </div>
-                
-          
-                </div>
+              </div>
+              <div class="">
+                <!-- features 1  -->
+                <div class="features-flex features-reverse align-items-center justify-content-between features-padding-y"
+                >
+                <div class="col-lg-5">
+                  <div
+                  class="postify-feature flex-grow-1 text-left"
+                  style="background: transparent"
+                >
+                  <h3  class="mb-3">
+                    Create the Most Suitable Content for Your Brand with AI
+                  </h3>
+                  <div >
+                    <p >
+                      On Facebook, which has 1.84 billion daily active users, create written and visual content that is most suitable for your brand with one click using AI Assistant. Schedule your content on the calendar and automatically share it whenever you want.
+                    </p>
+                  </div>
 
+                </div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                  <div
+                    class="postify-feature flex-grow-1 text-center"
+                    style="background: transparent"
+                  >
+                    <img
+                      alt="Sharing"
+                      class="lazyload"
+                      src="/images/socialfeatures/CanvaIntegration.webp"
+                    />
+                  </div>
+                </div>
+                 
+
+                 
+                </div>
+                <!-- features 2  -->
+                <div class="features-flex  align-items-center justify-content-between features-padding-y"
+                >
+                  <!-- features 2 image  -->
+                  <div class="col-lg-5 d-flex">
+                    <div
+                      class="postify-feature flex-grow-1 text-center"
+                      style="background: transparent"
+                    >
+                      <img
+                        alt="Sharing"
+                        class="lazyload"
+                        src="/images/socialfeatures/schedule-channels.webp"
+                      />
+                    </div>
+                  </div>
+                  <!-- features 2 text  -->
+                  <div class="col-lg-5 ">
+                    <div
+                      class="postify-feature flex-grow-1 text-left"
+                      style="background: transparent"
+                    >
+                      <h3  class="mb-3">
+                        Manage Facebook Messages in a Central Panel
+                      </h3>
+                      <div >
+                        <p >
+                       
+                          Many Facebook users expect to communicate quickly and effectively with brands. With our Inbox feature, manage all your Facebook messages from a single panel and meet the needs of your users instantly.
+                         </p>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+                <!-- features 3  -->
+                <div class="features-flex features-reverse   align-items-center justify-content-between features-padding-y"
+                 >
+                <div class="col-lg-6">
+                  <div
+                    class="postify-feature flex-grow-1 text-left"
+                    style="background: transparent"
+                  >
+                    <h3  class="mb-3">
+                      Develop Your Strategy with Data-Based Analysis
+                    </h3>
+                    <div class="">
+                      <p >
+                        Success on Facebook begins with understanding user interactions and content performance. The analysis screen provides all the statistics and analyses of your Facebook accounts, supporting your strategic decisions with data.
+                       </p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-lg-6 d-flex">
+                    <div
+                      class="postify-feature flex-grow-1 text-center"
+                      style="background: transparent"
+                    >
+                      <img
+                        alt="Sharing"
+                        class="lazyload"
+                        src="/images/socialfeatures/BestTimeToPost.webp"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+                <!-- features 4  -->
+                <div class="features-flex align-items-center justify-content-between features-padding-y"
+                >
+                  <!-- features 4 image  -->
+                  <div class="col-lg-6 d-flex">
+                    <div
+                      class="postify-feature flex-grow-1 text-center"
+                      style="background: transparent"
+                    >
+                      <img
+                        alt="Sharing"
+                        class="lazyload"
+                        src="/images/socialfeatures/FacebookGroups-1.webp"
+                      />
+                    </div>
+                  </div>
+                  <!-- features 4 text  -->
+                  <div class="col-lg-5 ">
+                    <div
+                      class="postify-feature flex-grow-1 text-left"
+                      style="background: transparent"
+                    >
+                      <h3  class="mb-3">
+                        Stronger Together on Facebook: Team Collaboration
+                      </h3>
+                      <div>
+                        <p>
+                          Because Facebook has a broad user base, affecting these users and providing a consistent brand experience requires team collaboration. The Collaboration feature allows you to manage tasks and posts, enabling you to manage your Facebook page together in an effective and efficient manner.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- cta section  -->
+          <div class="postify-cta">
+            <div class="container p-0">
+              <div class="postify-cta-wrapper">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <h2 class="mb-30">Postify, just <br> one click away</h2>
+                    
+                    <div class="mb-0 d-flex">
+                      <div class="">
+                          <a
+                        class="btn btn-light me-3"
+                        href="https://social.postify.app/auth/register"
+                        title="Start for free"
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        data-wpel-link="internal"
+                      >
+                        Start for free
+                      </a> 
+                      <p style="color: white;margin-top: 15px;">
+                        <img src="/fonts/305555-ffffff.webp" alt="">
+                        14-day free trial</p>
+                      </div>
+                      <div>
+                            <a
+                        class="btn btn-outline-light"
+                        href="/pricing/"
+                        title="View pricing"
+                        data-wpel-link="internal"
+                        target="_self"
+                        rel="follow"
+                      >
+                        View pricing
+                      </a>
+                      <p style="color: white;margin-top: 15px;">
+                        <img src="/fonts/1976101-ffffff.webp" alt="">
+                        No card required</p>
+                      </div>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cover">
+                  <img
+                    alt="Get started with Postify"
+                    width="581"
+                    height="627"
+                    src="/images/Dashboard.webp"
+                    class=""
+                  />
+                </div>
               </div>
             </div>
           </div>
-       
-        
         </div>
-      </main> -->
+      </main>
     </div>
+    <footer id="footer">
+      <div style="padding: 50px 0px" class="container-fluid">
+        <div class="container p-0">
+          <div class="rowi">
+            <div class="text-center text-lg-start mb-lg-0 mb-100">
+              <p style="margin-bottom: 20px;">
+                <a
+                  href="/"
+                  title="Postify"
+                  data-wpel-link="internal"
+                  target="_self"
+                  rel="follow"
+                >
+                  <img
+                    height="60"
+                    width="200"
+                    src="/images/postify_white.webp"
+                    alt=""
+                  />
+                </a>
+              </p>
+              <p>
+                 <div style="margin-bottom:15px; "   >
+                
+                <a
+                  class="footer-link"
+                 
+                  href="mailto:info@postify.app">Support</a
+                >
+                <strong style="padding: 0px 5px 0px 5px">|</strong>
+
+        
+                <a class="footer-link" href="/privacy-policy/">Privacy & Policy</a>
+              </div>
+              </p>
+             
+             
+              <ul 
+                class="social d-flex justify-content-center justify-content-lg-start list-unstyled p-0 m-0"
+              >
+                <li>
+                  <a
+                    href="https://instagram.com/postify.aplication?igshid=nzazn2q1nte"
+                    title="Facebook"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer external"
+                    data-wpel-link="external"
+                  >
+                    <img
+                    
+                      class="skip-lazy"
+                      src="/fonts/instagram.webp"
+                      alt="Instagram"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://tr.linkedin.com/company/ron-digital"
+                    title="LinkedIn"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer external"
+                    data-wpel-link="external"
+                  >
+                    <img
+                      class="skip-lazy"
+                      src="/fonts/linkedin.webp"
+                      alt="LinkedIn"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/RonDigitall"
+                    title="Twitter"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer external"
+                    data-wpel-link="external"
+                  >
+                    <img
+                      class="skip-lazy"
+                      src="/fonts/twitter.webp"
+                      alt="Twitter"
+                      width="24"
+                      height="24"
+                    />
+                  </a>
+                </li>
+             
+              </ul>
+              <p style="margin-top:15px;" >© All rights reserved.</p>
+              
+              
+           
+            </div>
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
+              <h4 class="widget-title text-uppercase font-bold mb-20">
+                  get started 
+              </h4>
+
+              <div class="menu-use-cases-container">
+                <ul id="menu-use-cases" class="menu">
+                  <li>
+                    <a
+                      href="/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/pricing/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://social.postify.app/auth/login"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Login</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://social.postify.app/auth/register"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Start Free Trial</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
+              <h4 class="widget-title text-uppercase font-bold mb-20">
+                Product
+              </h4>
+              <div class="menu-legal-container">
+                <ul id="menu-legal" class="menu">
+                  <li>
+                    <a
+                      href="/publish/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Publisher</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/analytics/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/customer-engagement/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Customer Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/ai-creativity/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >AI Content</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget text-lg-start mb-lg-0 mb-100">
+              <h4 class="widget-title text-uppercase font-bold mb-20">
+                Channels
+              </h4>
+              <div class="menu-legal-container">
+                <ul id="menu-legal" class="menu">
+                  <li>
+                    <a
+                      href="/chanels/instagram/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/chanels/facebook/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/chanels/twitter/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/chanels/linkedin/"
+                      data-wpel-link="internal"
+                      target="_self"
+                      rel="follow"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" >
+        
+        
+      </div>
+    </footer>
     <script src="/js/jquery.min.js" id="jquery-core-js"></script>
     <script src="/js/postify-lazy-scripts.js"></script>
     <script src="/js/ScrollMagic.min.js" id="postify-scrollMagic-js"></script>
