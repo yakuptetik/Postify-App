@@ -220,6 +220,7 @@ html {
 #topmenu .nav-link {
   font-size: 15px;
   font-weight: 400;
+
 }
 #footer .widget ul li a:focus,
 #footer .widget ul li a:hover,
@@ -1427,6 +1428,22 @@ article.term > ol > li h4 {
     top: 2px;
   }
 }
+@media (max-width: 800px){
+
+  .postify-cta-wrapper .cover{
+    display: none;
+    
+  }
+
+}
+@media (max-width: 1200px){
+  .postify-cta-wrapper .cover{
+    top: 65%!important;
+    
+  }
+
+}
+
 @media (max-width: 767.98px) {
   #header .btn {
     padding: 0.75rem 1rem 0.625rem;
@@ -1539,7 +1556,6 @@ article.term > ol > li h4 {
   display: inline-block;
 }
 .custom-dropdown-toggle {
-  color: #212529;
   padding: 8px;
   font-size: 16px;
   border: none;
