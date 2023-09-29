@@ -42,125 +42,136 @@
   <body
     class="home page d-flex flex-column no-webp homepage group-blog unknown-os unknown-browser"
   >
- 
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
 
     <div id="view" class="flex-grow-1">
          <!-- mobil navbar -->
-         <div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-              <div class="modal-content d-flex">
-                <div
-                  class="container flex-grow-1 d-flex align-items-center justify-content-center"
-                >
-                  <ul id="menu-main-menu" class="menu">
-                    <li class="nav-item">
+      <div  class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content d-flex">
+            <div  class="container modal-container flex-grow-1 d-flex align-items-center justify-content-center">
+              <ul id="menu-main-menu" class="menu">
+                <li class="nav-item">
+                  <a
+                    href="/"
+                    class="nav-link"
+                    
+                    
+                    
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Home</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="featuresDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-                    <li class="nav-item">
-                      <div class="dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="featuresDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <!-- dropdown-toggle -->
-                            Product
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="featuresDropdown"
-                        >
-                          <a class="dropdown-item" href="/publish">Publisher </a>
-    
-                          <a class="dropdown-item" href="/analytics">Analytics</a>
-                          <a class="dropdown-item" href="/customer-engagement">Customer Engagement</a>
-                          <a class="dropdown-item" href="/ai-creativity">AI Content</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <div class="custom-dropdown">
-                        <div class="d-flex align-items-center">
-                          <a
-                            class="custom-dropdown-toggle nav-link"
-                            id="customFeaturesDropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Channels
-                          </a>
-                          <svg
-                            fill="#525979"
-                            height="6"
-                            viewBox="0 0 11 7"
-                            width="11"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
-                              fill="#525979"
-                            />
-                          </svg>
-                        </div>
-                        <div
-                          class="custom-dropdown-menu"
-                          aria-labelledby="customFeaturesDropdown"
-                        >
-                          <a class="custom-dropdown-item" href="/chanels/facebook/">Facebook</a>
-                          <a class="custom-dropdown-item" href="/chanels/instagram/">Instagram</a>
-                          <a class="custom-dropdown-item" href="/chanels/twitter/">Twitter</a>
-                          <a class="custom-dropdown-item" href="/chanels/linkedin/">LinkedIn</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
+                        <!-- dropdown-toggle -->
+                        Product
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="featuresDropdown"
+                    >
+                      <a class="dropdown-item" href="/publish/">Publisher </a>
+
+                      <a class="dropdown-item" href="/analytics/">Analytics</a>
+                      <a class="dropdown-item" href="/customer-engagement/"
+                        >Customer Engagement</a
+                      >
+                      <a class="dropdown-item" href="/ai-creativity/"
+                        >AI Content</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="custom-dropdown">
+                    <div class="d-flex align-items-center">
                       <a
-                        href="/pricing/"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        target="_self"
-                        rel="follow"
-                        >Pricing</a
+                        class="custom-dropdown-toggle nav-link"
+                        id="customFeaturesDropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
                       >
-                    </li>
-    
-                    <li class="d-lg-none w-100 btn btn-primary nav-item">
-                      <a
-                        target="_blank"
-                        rel="noopener follow"
-                        href="https://social.postify.app/auth/register"
-                        class="nav-link"
-                        data-wpel-link="internal"
-                        >Login</a
+                        Channels
+                      </a>
+                      <svg
+                        fill="#525979"
+                        height="6"
+                        viewBox="0 0 11 7"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                        <path
+                          d="m5.414 6.414c-.256 0-.512-.098-.707-.293l-4.707-4.707 1.414-1.414 4 4 4-4 1.414 1.414-4.707 4.707c-.195.195-.451.293-.707.293z"
+                          fill="#525979"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="custom-dropdown-menu"
+                      aria-labelledby="customFeaturesDropdown"
+                    >
+                      <a class="custom-dropdown-item" href="/chanels/facebook/"
+                        >Facebook</a
+                      >
+                      <a class="custom-dropdown-item" href="/chanels/instagram/"
+                        >Instagram</a
+                      >
+                      <a class="custom-dropdown-item" href="/chanels/twitter/"
+                        >Twitter</a
+                      >
+                      <a class="custom-dropdown-item" href="/chanels/linkedin/"
+                        >LinkedIn</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/pricing/"
+                    class="nav-link"
+                    
+                    
+                    
+                    >Pricing</a
+                  >
+                </li>
+                <li class="d-lg-none w-100 btn btn-primary nav-item">
+                  <a
+                    target="_blank"
+                    rel="noopener follow"
+                    href="https://social.postify.app/auth/login"
+                    class="nav-link"
+                    
+                    >Login</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+      </div>
           <header id="header" >
             <div class="container-fluid">
               <nav class="container p-0 navbar navbar-expand-lg align-items-center">
@@ -172,8 +183,8 @@
                       href="/"
                       title="Postify"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                     >
                       <img src="/fonts/Postify-logo.svg" alt="" />
                     </a>
@@ -186,8 +197,8 @@
                           href="/"
                           class="nav-link"
                           data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
+                          
+                          
                           >Home</a
                         >
                       </li>
@@ -421,8 +432,8 @@
                           href="/pricing/"
                           class="nav-link"
                           data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
+                          
+                          
                           >Pricing</a
                         >
                       </li>
@@ -492,7 +503,7 @@
         <p class="text-center  mb-0">
           <a class="btn btn-primary me-3" href="https://social.postify.app/auth/register" title="Start for free" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="internal">
           Start for free </a>
-          <a class="btn btn-outline-primary" href="/pricing/" title="View pricing" data-wpel-link="internal" target="_self" rel="follow">
+          <a class="btn btn-outline-primary" href="/pricing/" title="View pricing" data-wpel-link="internal"  >
           View pricing </a>
           </p>
       
@@ -752,8 +763,8 @@
                           href="/pricing/"
                           title="View pricing"
                           data-wpel-link="internal"
-                          target="_self"
-                          rel="follow"
+                          
+                          
                         >
                           View pricing
                         </a>
@@ -789,8 +800,8 @@
                   href="/"
                   title="Postify"
                   data-wpel-link="internal"
-                  target="_self"
-                  rel="follow"
+                  
+                  
                 >
                   <img
                     height="60"
@@ -890,8 +901,8 @@
                     <a
                       href="/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Home</a
                     >
                   </li>
@@ -899,8 +910,8 @@
                     <a
                       href="/pricing/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Pricing</a
                     >
                   </li>
@@ -908,8 +919,8 @@
                     <a
                       href="https://social.postify.app/auth/login"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Login</a
                     >
                   </li>
@@ -917,8 +928,8 @@
                     <a
                       href="https://social.postify.app/auth/register"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Start Free Trial</a
                     >
                   </li>
@@ -936,8 +947,8 @@
                     <a
                       href="/publish/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Publisher</a
                     >
                   </li>
@@ -945,8 +956,8 @@
                     <a
                       href="/analytics/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Analytics</a
                     >
                   </li>
@@ -954,8 +965,8 @@
                     <a
                       href="/customer-engagement/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Customer Engagement</a
                     >
                   </li>
@@ -963,8 +974,8 @@
                     <a
                       href="/ai-creativity/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >AI Content</a
                     >
                   </li>
@@ -982,8 +993,8 @@
                     <a
                       href="/chanels/instagram/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Instagram</a
                     >
                   </li>
@@ -991,8 +1002,8 @@
                     <a
                       href="/chanels/facebook/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Facebook</a
                     >
                   </li>
@@ -1000,8 +1011,8 @@
                     <a
                       href="/chanels/twitter/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >Twitter</a
                     >
                   </li>
@@ -1009,8 +1020,8 @@
                     <a
                       href="/chanels/linkedin/"
                       data-wpel-link="internal"
-                      target="_self"
-                      rel="follow"
+                      
+                      
                       >LinkedIn</a
                     >
                   </li>
@@ -1024,15 +1035,24 @@
         
         
       </div>
-    </footer>
+     </footer> <script> window.addEventListener("load", function () {
+      setTimeout(function () {
+        var loader = document.querySelector(".loader");
+        var loaderContainer = document.querySelector(".loader-container");
+        loader.style.display = "none";
+        loaderContainer.style.display = "none";
+      }, 500);
+    });
+    </script>
     <script src="/js/jquery.min.js" id="jquery-core-js"></script>
     <script src="/js/postify-lazy-scripts.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/ScrollMagic.min.js" id="postify-scrollMagic-js"></script>
     <script src="/js/flickity.pkgd.min.js" id="postify-flickity-js"></script>
     <script src="/js/jquery.scrollTo.min.js" id="postify-scrollTo-js"></script>
     <script src="/js/rocket-loader.min.js"></script>
     <script src="/js/jquery-migrate.min.js" id="jquery-migrate-js" ></script>
     <script src="/js/homepage.js" id="postify-homepage-js"></script>   
-    <script src="/js/yakup.js" id="postify-script-js"></script> 
+    <script src="/js/main.js" id="postify-script-js"></script> 
   </body>
 </html>

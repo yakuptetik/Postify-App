@@ -4,7 +4,6 @@ if (
   window.innerWidth > 1024
 ) {
   let e = document.getElementById("header");
-  console.log("girdi", e),
     (e.style.opacity = 1),
     document.addEventListener("scroll", () => {
       e.style.opacity = 1;
