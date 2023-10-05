@@ -2382,15 +2382,17 @@ fieldset:disabled .btn {
   min-width: 10rem;
   padding: 5px;
   margin: 0;
-  font-size: 1rem;
-  color: #424f65;
+  font-size: 1.3rem;
+  color: #525979!important;
   text-align: left;
+  left: 20px;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
@@ -2470,9 +2472,9 @@ fieldset:disabled .btn {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   clear: both;
-  color: #212529;
+  color: #525979;
   text-align: inherit;
   background-color: transparent;
   border: 0;
@@ -2483,9 +2485,9 @@ fieldset:disabled .btn {
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: #1e2125;
-  border-radius: 5px;
-  background-color: #e9ecef;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #4141ea;
 }
 .dropdown-item.active,
 .dropdown-item:active {
@@ -6363,7 +6365,7 @@ h6 {
   display: inline-block;
   width: 32px;
   height: 22px;
-  margin-left: 15px;
+  margin-left: 5px;
   padding: 3px;
   cursor: pointer;
   color: inherit;
